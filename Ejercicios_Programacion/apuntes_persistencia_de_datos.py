@@ -1,0 +1,4 @@
+#Creacion
+#Apertura
+#Manipulacion
+#Cerrar
