@@ -1,0 +1,21 @@
+body{
+    background-color: chocolate;
+}
+
+.animacion{
+    width: 1200px;                    /* Tamaño de la imagen */
+    transition: transform 1s;         /*  Duracion de la animación */
+}
+
+.animacion:hover{            /* Ponemos un hover para que al pasar el raton por la imagen se active la animacion */
+    transform: scale(1.2);   /* Para que la imagen escale su tamaño */
+    
+}
+
+
+
+.color{
+    color: brown;
+    background-color: chocolate;
+    font-family: 'Times New Roman', Times, serif;
+}
