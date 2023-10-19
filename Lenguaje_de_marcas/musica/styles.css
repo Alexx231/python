@@ -3,12 +3,12 @@ body{
 }
 
 .animacion{
-    width: 1200px;                    /* Tamaño de la imagen */
+    width: 600px;                    /* Tamaño de la imagen */
     transition: transform 1s;         /*  Duracion de la animación */
 }
 
 .animacion:hover{            /* Ponemos un hover para que al pasar el raton por la imagen se active la animacion */
-    transform: scale(1.2);   /* Para que la imagen escale su tamaño */
+    transform: scale(1.6);   /* Para que la imagen escale su tamaño */
     
 }
 
