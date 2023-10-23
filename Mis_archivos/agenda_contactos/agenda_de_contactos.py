@@ -50,8 +50,9 @@ def eliminar_contacto(contactos):
                 with open("agenda.txt") as archivo:
                     for contacto in contactos: 
                         archivo.write(contacto[0]+ ','+ contacto[1])
+    except FileNotFoundError:
+        print(f"\nPorfavor, intentelo de nuevo")
                              
-            
     return contactos
 
 
