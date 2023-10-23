@@ -23,7 +23,7 @@ def visualizar_contactos(contactos):
         with open("agenda.txt") as archivo:
             lineas = archivo.readlines()
             for linea in lineas: 
-                nombre, telefono = linea.strip().split(',')
+                nombre, telefono = linea.strip().split(",")
                 print(f"Nombre {nombre} - Telefono {telefono}")
     except FileNotFoundError:
         print(f"La agenda de contacto parece estar vacia")
