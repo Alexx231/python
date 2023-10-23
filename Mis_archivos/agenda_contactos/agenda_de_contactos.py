@@ -12,8 +12,8 @@ def menu():
 def anadircontactos(contactos):
     nombre = input("\nPorfavor añade un nombre : ")
     telefono = input("\nPorfavor añade un numero de telefono : ")
-    with opne("agenda.txt") as archivo:
-        archivo.write(nombre +',' + telefono)
+    with open("agenda.txt") as archivo:
+        archivo.write(nombre +","+ telefono)
         print(f"Contacto {nombre} añadido correctamente")
     return contactos
 
@@ -63,7 +63,7 @@ while True:
     if opcion == 1:
         contactos = anadircontactos(contactos)
     elif opcion == 2:
-        visualizar_contactos()
+        visualizar_contactos(contactos)
     elif opcion == 3:
         contactos = eliminar_contacto(contactos)
     elif opcion == 4:
