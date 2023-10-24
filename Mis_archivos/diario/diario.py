@@ -33,27 +33,26 @@ def ver_diario(diario):
     return diario
            
 def eliminar_diario(diario):
-    dia_a_eliminar = input(f"\nEscribe el dia que desees eliminar : ")
-    diarios = []
+    dia_a_eliminar = input("Introduce el nombre del contacto que deseas eliminar : ")
+    dias = []
     eliminado = False
-    
-    
     try:
         with open("diario.txt","r") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
                 dia,anecdota = linea.strip().split(";")
                 if dia in dia_a_eliminar:
-                    diario.append({dia,anecdota})
+                    dias.append({dia, anecdota})
                 else:
                     eliminado = True
+                    
             if eliminado:
-                 with open("diario.txt","w") as archivo:
-                    for diario in diarios:
-                        archivo.write(diario[0] + ";" + diario[1])
+                with open("diario.txt","w") as archivo:
+                    for dia in dias:
+                        archivo.write(dia[0]+ ";" + dia[1])
     except FileNotFoundError:
         print(f"\nPorfavor, intentelo de nuevo")
-                             
+        
     return diario
                 
                 
