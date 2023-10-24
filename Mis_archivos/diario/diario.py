@@ -15,7 +15,7 @@ def anadir_diario(diario):
         dia = input(f"Introducir un dia : ")
         anecdota = input(f"Introcudir una anectota : ")
         with open("diario.txt", "a") as archivo:
-            archivo.write(dia + ";" + anecdota)
+            archivo.write(dia + ";" + anecdota + "\n")
             print(f"\nSe a añadido correctamente el dia {dia}")
     except FileNotFoundError:
         print(f"\nOpcion Incorrecta")
