@@ -1,7 +1,7 @@
 diario = [] #Lista vacia en la que se introduciran valores 
 
 
-def menu(): #Funcion del menu del diario
+def menu(): #Funcion que muestra un menú con opciones para añadir al diario, ver el diario, eliminar del diario o salir.
     print(f"\n1.Añadir al diario")
     print(f"\n2.Ver el diario")
     print(f"\n3.Eliminar del diario")
@@ -10,29 +10,31 @@ def menu(): #Funcion del menu del diario
     return opcion
 
 
-def anadir_diario(diario): #Funcion para añadir los dias y las anecdotas 
+def anadir_diario(diario): #Funcion que permite al usuario agregar un día y una anécdota. Los valores se introducen manualmente y se escriben en el archivo "diario.txt"
     try:
-        dia = input(f"Introducir un dia : ")
-        anecdota = input(f"Introcudir una anectota : ")
-        with open("diario.txt", "a") as archivo:
-            archivo.write(dia + ";" + anecdota + "\n")
+        dia = input(f"Introducir un dia : ") #Para pedirle al usuario que introduzca un dia manualmente
+        anecdota = input(f"Introcudir una anectota : ") #Para pedirle al usuario que introduzca una anecdota manualmente
+        with open("diario.txt", "a") as archivo: #Se utiliza para abrir el archivo de texto donde se almacenan los valores introducidos por el usuario 
+                                                    #Y el "a" significa append que sirve para añadir valores en este caso al archivo de texto
+            archivo.write(dia + ";" + anecdota + "\n") 
             print(f"\nSe a añadido correctamente el dia {dia}")
     except FileNotFoundError:
         print(f"\nOpcion Incorrecta")
     return diario
        
-def ver_diario(diario):
+def ver_diario(diario): #Funcion que lee el archivo "diario.txt" y muestra el contenido, que son los días y las anécdotas previamente ingresadas.
     try:
-        with open("diario.txt","r")as archivo:
-            lineas = archivo.readlines()
+        with open("diario.txt","r")as archivo: #Se utiliza para abrir el archivo de texto donde se almacenan los valores introducidos por el usuario 
+                                                    #Y el "r" significa read que sirve para leer valores en este caso del archivo de texto
+            lineas = archivo.readlines() #Para que lea linea por linea
             for linea in lineas:
-                dia,anecdota = linea.strip().split(";")
+                dia,anecdota = linea.strip().split(";") #Para que quite los espacios que hay y los ; ( punto y coma)
                 print(f"Dia {dia} - Anecdota {anecdota}")
     except FileNotFoundError:
         print(f"Parece ser que el dia no es correcto, intentalo de nuevo")
     return diario
            
-def eliminar_diario(diario):
+def eliminar_diario(diario): #Funcion que permite al usuario eliminar un día específico del diario.
     dia_a_eliminar = input("Introduce el nombre del contacto que deseas eliminar : ")
     fechas = []
     eliminado = False
