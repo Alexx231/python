@@ -41,7 +41,7 @@ def eliminar_diario(diario):
             lineas = archivo.readlines()
             for linea in lineas:
                 dia,anecdota = linea.strip().split(";")
-                if dia in dia_a_eliminar:
+                if dia != dia_a_eliminar:
                     dias.append({dia, anecdota})
                 else:
                     eliminado = True
