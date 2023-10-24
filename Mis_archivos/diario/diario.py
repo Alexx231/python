@@ -1,7 +1,7 @@
-diario = []
+diario = [] #Lista vacia en la que se introduciran valores 
 
 
-def menu():
+def menu(): #Funcion del menu del diario
     print(f"\n1.Añadir al diario")
     print(f"\n2.Ver el diario")
     print(f"\n3.Eliminar del diario")
@@ -10,7 +10,7 @@ def menu():
     return opcion
 
 
-def anadir_diario(diario):
+def anadir_diario(diario): #Funcion para añadir los dias y las anecdotas 
     try:
         dia = input(f"Introducir un dia : ")
         anecdota = input(f"Introcudir una anectota : ")
@@ -34,7 +34,7 @@ def ver_diario(diario):
            
 def eliminar_diario(diario):
     dia_a_eliminar = input("Introduce el nombre del contacto que deseas eliminar : ")
-    dias = []
+    fechas = []
     eliminado = False
     try:
         with open("diario.txt","r") as archivo:
@@ -42,13 +42,13 @@ def eliminar_diario(diario):
             for linea in lineas:
                 dia,anecdota = linea.strip().split(";")
                 if dia != dia_a_eliminar:
-                    dias.append({dia, anecdota})
+                    fechas.append({dia,anecdota})
                 else:
                     eliminado = True
                     
             if eliminado:
                 with open("diario.txt","w") as archivo:
-                    for dia in dias:
+                    for dia in fechas:
                         archivo.write(dia[0]+ ";" + dia[1])
     except FileNotFoundError:
         print(f"\nPorfavor, intentelo de nuevo")
