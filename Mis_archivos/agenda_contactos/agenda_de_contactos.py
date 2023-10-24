@@ -12,8 +12,8 @@ def menu():
 def anadircontactos(contactos):
     nombre = input("\nPorfavor añade un nombre : ")
     telefono = input("\nPorfavor añade un numero de telefono : ")
-    with open("agenda.txt") as archivo:
-        archivo.write(nombre +","+ telefono)
+    with open("agenda.txt", "a") as archivo:
+        archivo.write(nombre + ',' + telefono)
         print(f"Contacto {nombre} añadido correctamente")
     return contactos
 
@@ -22,12 +22,12 @@ def visualizar_contactos(contactos):
     try:
         with open("agenda.txt") as archivo:
             lineas = archivo.readlines()
-            for linea in lineas: 
-                nombre, telefono = linea.strip().split(",")
+            for linea in lineas:
+                nombre,telefono = linea.strip().split(',')
                 print(f"Nombre {nombre} - Telefono {telefono}")
     except FileNotFoundError:
         print(f"La agenda de contacto parece estar vacia")
-    return
+    return contactos
         
         
 
@@ -37,22 +37,22 @@ def eliminar_contacto(contactos):
     eliminado = False
     
     try:
-        with open("agenda.txt") as archivo:
+        with open("agenda.txt", "r") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
-                nombre, numero = linea.strip().split()
+                nombre,telefono = linea.strip().split(',')
                 if nombre in nombre_a_eliminar:
-                    contactos.append({nombre, numero})
+                    contactos.append({nombre, telefono})
                 else:
                     eliminado = True
                     
             if eliminado:
-                with open("agenda.txt") as archivo:
-                    for contacto in contactos: 
+                with open("agenda.txt","w") as archivo:
+                    for contacto in contactos:
                         archivo.write(contacto[0]+ ','+ contacto[1])
     except FileNotFoundError:
         print(f"\nPorfavor, intentelo de nuevo")
-                             
+        
     return contactos
 
 
@@ -71,5 +71,6 @@ while True:
         break
     else:
         print(f"\nOpcion Incorrecta")
+    
     
     
