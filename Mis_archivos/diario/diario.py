@@ -10,21 +10,22 @@ def menu():
     return opcion
 
 
-def anadir_diario():
+def anadir_diario(diario):
     dia = input(f"Introducir un dia : ")
     anecdota = input(f"Introcudir una anectota : ")
     with open("diario.txt", "a") as archivo:
         lineas = archivo.readlines()
         for linea in lineas:
             linea.strip().split(";")
-        
+        print(dia + ";" + anecdota)
+    return diario
             
-
-
+        
 def ver_diario():
     
 
 def eliminar_diario():
+    return
 
 
 while True:
