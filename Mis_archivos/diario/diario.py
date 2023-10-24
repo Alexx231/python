@@ -36,6 +36,7 @@ def ver_diario(diario):
 def eliminar_diario(diario):
     dia_a_eliminar = input(f"\nEscribe el dia que desees eliminar : ")
     eliminado = False
+    nuevo_diario = []
     
     try:
         with open("diario.txt","r") as archivo:
@@ -46,6 +47,11 @@ def eliminar_diario(diario):
                     diario.append(dia,anecdota)
                 else:
                     eliminado = True
+            if eliminado:
+                dias: [ dia {1} + dia {2} ]
+                with open("diario.txt","w") as archivo:
+                    for dia in dias:
+                
                 
         
             
