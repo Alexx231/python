@@ -37,7 +37,7 @@ def eliminar_contacto(contactos):
     eliminado = False
     
     try:
-        with open("agenda.txt", "r") as archivo:
+        with open("agenda.txt") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
                 nombre,telefono = linea.strip().split(',')
@@ -48,11 +48,11 @@ def eliminar_contacto(contactos):
                     
             if eliminado:
                 with open("agenda.txt") as archivo:
-                    for contacto in contactos: 
+                    for contacto in contactos:
                         archivo.write(contacto[0]+ ','+ contacto[1])
     except FileNotFoundError:
         print(f"\nPorfavor, intentelo de nuevo")
-        
+                             
     return contactos
 
 
@@ -72,6 +72,6 @@ while True:
     else:
         print(f"\nOpcion Incorrecta")
     
-    ############uguhgjjhjgjhgjhg
+    
     
     
