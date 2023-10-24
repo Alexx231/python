@@ -33,8 +33,23 @@ def ver_diario(diario):
         print(f"Parece ser que el dia no es correcto, intentalo de nuevo")
     return diario
            
-def eliminar_diario():
-    return
+def eliminar_diario(diario):
+    dia_a_eliminar = input(f"\nEscribe el dia que desees eliminar : ")
+    eliminado = False
+    
+    try:
+        with open("diario.txt","r") as archivo:
+            lineas = archivo.readlines()
+            for linea in lineas:
+                dia,anecdota = linea.strip().split(";")
+                if dia in dia_a_eliminar:
+                    diario.append(dia,anecdota)
+                else:
+                    eliminado = True
+                
+        
+            
+    
 
 
 while True:
