@@ -20,7 +20,7 @@ def anadircontactos(contactos):
 
 def visualizar_contactos(contactos):
     try:
-        with open("agenda.txt") as archivo:
+        with open("agenda.txt","r") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
                 nombre,telefono = linea.strip().split(',')
@@ -37,7 +37,7 @@ def eliminar_contacto(contactos):
     eliminado = False
     
     try:
-        with open("agenda.txt") as archivo:
+        with open("agenda.txt","r") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
                 nombre,telefono = linea.strip().split(',')
@@ -47,7 +47,7 @@ def eliminar_contacto(contactos):
                     eliminado = True
                     
             if eliminado:
-                with open("agenda.txt") as archivo:
+                with open("agenda.txt","w") as archivo:
                     for contacto in contactos:
                         archivo.write(contacto[0]+ ','+ contacto[1])
     except FileNotFoundError:
