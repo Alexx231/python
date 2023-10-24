@@ -6,12 +6,19 @@ def menu():
     print(f"\n2.Ver el diario")
     print(f"\n3.Eliminar del diario")
     print(f"\n4.Salir")
-    opcion = input(f"\nElige una opcion : ")
+    opcion = int(input(f"\nElige una opcion : "))
     return opcion
 
 
 def anadir_diario():
-    
+    dia = input(f"Introducir un dia : ")
+    anecdota = input(f"Introcudir una anectota : ")
+    with open("diario.txt", "a") as archivo:
+        lineas = archivo.readlines()
+        for linea in lineas:
+            linea.strip().split(";")
+        
+            
 
 
 def ver_diario():
