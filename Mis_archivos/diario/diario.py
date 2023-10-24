@@ -15,19 +15,24 @@ def anadir_diario(diario):
         dia = input(f"Introducir un dia : ")
         anecdota = input(f"Introcudir una anectota : ")
         with open("diario.txt", "a") as archivo:
+            diario.append(dia + ";" + anecdota)
             lineas = archivo.readlines()
             for linea in lineas:
                 dia,anecdota = linea.strip().split(";")
-                print(dia + ";" + anecdota)
+                print(f"\nSe a añadido correctamente el dia {dia}")
     except FileNotFoundError:
         print(f"\nOpcion Incorrecto")
     return diario
-        
-            
-        
+
+          
 def ver_diario():
+    with open("diario.txt","r")as archivo:
+        lineas = archivo.readlines()
+        
+        
     
-def eliminar_diario()
+def eliminar_diario():
+    return
 
 
 while True:
