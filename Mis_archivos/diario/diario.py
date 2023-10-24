@@ -35,8 +35,9 @@ def ver_diario(diario):
            
 def eliminar_diario(diario):
     dia_a_eliminar = input(f"\nEscribe el dia que desees eliminar : ")
+    dias= []
     eliminado = False
-    nuevo_diario = []
+    
     
     try:
         with open("diario.txt","r") as archivo:
@@ -48,9 +49,13 @@ def eliminar_diario(diario):
                 else:
                     eliminado = True
             if eliminado:
-                dias: [ dia {1} + dia {2} ]
-                with open("diario.txt","w") as archivo:
+                 with open("diario.txt","w") as archivo:
                     for dia in dias:
+                        archivo.write(dia[0] + ";" + dia[1])
+    except FileNotFoundError:
+        print(f"\nPorfavor, intentelo de nuevo")
+                             
+    return diario
                 
                 
         
@@ -66,7 +71,7 @@ while True:
     elif opcion == 2:
         ver_diario(diario)
     elif opcion == 3:
-        eliminar_diario()
+        diario = eliminar_diario(diario)
     elif opcion == 4:
         print(f"\nHASTA LA PROXIMA")
         break
