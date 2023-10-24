@@ -61,7 +61,7 @@ def eliminar_diario(diario): #Funcion que permite al usuario eliminar un día es
                 
                 
                 
-while True:
+while True: #Funcion Principal
     opcion = menu()
     
     if opcion == 1:
