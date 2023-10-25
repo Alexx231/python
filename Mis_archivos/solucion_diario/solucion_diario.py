@@ -1,4 +1,4 @@
-from 
+from mod_solucion import *
                 
 while True: #Funcion Principal
     opcion = menu()
