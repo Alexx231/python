@@ -34,7 +34,7 @@ def ver_diario(): #Funcion que lee el archivo "diario.txt" y muestra el contenid
         print(f"Parece ser que el dia no es correcto, intentalo de nuevo")
     return
            
-def eliminar_diario(diario): #Funcion que permite al usuario eliminar un día específico del diario.
+def eliminar_diario(): #Funcion que permite al usuario eliminar un día específico del diario.
     dia_a_eliminar = input("Introduce el nombre del contacto que deseas eliminar : ")
     fechas = []
     eliminado = False
@@ -44,15 +44,16 @@ def eliminar_diario(diario): #Funcion que permite al usuario eliminar un día es
             for linea in lineas:
                 dia,anecdota = linea.strip().split(";")
                 if dia != dia_a_eliminar:
-                    fechas.append({dia,anecdota})
+                    texto_a_grabar = dia + ";" + anecdota + "\n"
+                    fechas.append(texto_a_grabar)
                 else:
                     eliminado = True
                     
             if eliminado:
                 with open("diario.txt","w") as archivo:
                     for dia in fechas:
-                        archivo.write(dia[0]+ ";" + dia[1])
+                        archivo.write(dia)
     except FileNotFoundError:
         print(f"\nPorfavor, intentelo de nuevo")
         
-    return diario
+    return

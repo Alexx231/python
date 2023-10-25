@@ -4,9 +4,9 @@ while True: #Funcion Principal
     opcion = menu()
     
     if opcion == 1:
-        diario = anadir_diario(diario)
+        diario = anadir_diario()
     elif opcion == 2:
-        ver_diario(diario)
+        ver_diario()
     elif opcion == 3:
         diario = eliminar_diario(diario)
     elif opcion == 4:
