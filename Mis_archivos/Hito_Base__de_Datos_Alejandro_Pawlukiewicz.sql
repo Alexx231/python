@@ -184,3 +184,40 @@ VALUES(1,'Museo del Prado'),
       (7,'Teleférico de Madrid'),
       (8,'Catedral de la Almudena');
 
+
+SELECT *
+FROM calles
+WHERE id_calle = "1";
+
+SELECT nombre_linea_autobus
+FROM lineas_autobuses
+WHERE id_linea_autobus IN (1,5,8);
+
+SELECT nombre_punto_interes
+FROM puntos_interes
+WHERE id_punto_interes BETWEEN 2 AND 6;
+
+SELECT nombre_calle
+FROM calles
+ORDER BY id_calle DESC;
+
+SELECT *
+FROM barrios
+WHERE nombre_barrio LIKE 'B%' 'S%';
+
+SELECT nombre_estacion
+FROM estaciones
+LIMIT 4;
+
+SELECT DISTINCT nombre_linea_metro
+FROM lineas_metro
+WHERE id_linea_metro BETWEEN 1 AND 4;
+
+SELECT
+FROM
+
+SELECT
+FROM
+
+SELECT
+FROM
