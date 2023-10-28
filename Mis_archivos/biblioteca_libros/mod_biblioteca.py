@@ -37,17 +37,36 @@ def añadirlibro():
         Año_de_publicacion = input(f"\nEn que año se publico el libro? : ")
         Genero = input(f"\nDime el genero del libro : ")
         with open("biblioteca.txt","w") as archivo:
-            archivo.write(Titulo + ";" + Autor + ";" + Año_de_publicacion + ";" + Genero + "\n")
+            archivo.write(Titulo + "-" + Autor + "-" + Año_de_publicacion + "-" + Genero + "\n")
             print(f"\nEl libro {Titulo} fue añadido correctamente")
     except FileNotFoundError:
         print(f"\nNo se pudo añadir el libro")
     return
 
 def visualizarlibros():
+    with open("biblioteca.txt","r") as archivo:
+        lineas =  archivo.readlines()
+        for linea in lineas:
+            print(f"\n{linea}")  
+    return
 
 def buscarlibros():
+    libro_a_buscar = input(f"\nQue libro deseas buscar :")
+    with open("biblioteca.txt","r") as archivo:
+        lineas = archivo.readlines()
+        for linea in lineas:
+            if linea in libro_a_buscar:
+                print(f"\n{linea}")
+            else:
+                print(f"\nEl libro no esta disponible")
+    return        
 
 def eliminarlibros():
+    libro_a_eliminar = input(f"\nQue libro desea eliminar? : ")
+    libroseliminados = []
+    eliminado = False
+    
+    
 
 def prestarlibro():
 
