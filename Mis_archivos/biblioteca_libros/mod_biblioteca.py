@@ -87,6 +87,7 @@ def eliminarlibros():
     
                 
 def prestarlibro():
+    
 
 def devolverlibro():
     
