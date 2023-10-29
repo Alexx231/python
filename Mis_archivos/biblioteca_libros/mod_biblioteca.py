@@ -56,7 +56,7 @@ def buscarlibros():
     with open("biblioteca.txt","r") as archivo:
         lineas = archivo.readlines()
         for linea in lineas:
-            if linea in libro_a_buscar:
+            if linea in Biblioteca:
                 print(f"\n{linea}")
             else:
                 print(f"\nEl libro no esta disponible")
@@ -74,7 +74,7 @@ def eliminarlibros():
                 Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(";")
                 if linea != libroseliminados:
                     libroaguardar = Titulo + ";" + Autor + ";" + Año_de_publicacion + ";" + Genero + "\n"
-                    print(f"\n{libroaguardar}")
+                    print(f"\nEl libro {libroaguardar} fue eiminado correctamente")
                 else:
                     eliminado = True
             if eliminado:
@@ -89,12 +89,21 @@ def eliminarlibros():
 def prestarlibro():
     libros_prestar = input(f"\nDime el libro que quieras prestar : ")
     librosprestados = []
+    prestado = False
     try:
-        with open("bibliotecaprestados.txt","a") as archivo:
-            lineas = archivo.readlines()
-            for linea in lineas:
-                if linea in Biblioteca:
-                    librosprestados.append(linea)
+        with open("bibliotecaprestados.txt","r") as archivo:
+                lineas = archivo.readlines()
+                for linea in lineas:
+                    Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(";")
+                    if linea != librosprestados:
+                        libroaprestar = Titulo + ";" + Autor + ";" + Año_de_publicacion + ";" + Genero + "\n"
+                            print(f"\nEl libro {libroaprestar} fue prestado exitosamente")
+                    else:
+                        prestado = True
+                if prestado:
+                    with open("bibliotecaprestados.txt", "w") as archivo:
+                        for linea in librosprestados:
+                            print(f"\n{linea}")
     except FileNotFoundError:
         print(f"\nNo a sido posible prestar el libro")
     return
