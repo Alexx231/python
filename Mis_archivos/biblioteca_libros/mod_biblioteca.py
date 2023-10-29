@@ -44,23 +44,32 @@ def añadirlibro():
     return
 
 def visualizarlibros():
-    with open("biblioteca.txt","r") as archivo:
-        lineas =  archivo.readlines()
-        for linea in lineas:
-            Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(",")
-            print(f"\nTitulo : {Titulo} - Autor : {Autor} - Año de Publicacion : {Año_de_publicacion} - Genero : {Genero}")  
+    try:
+        with open("biblioteca.txt","r") as archivo:
+            lineas =  archivo.readlines()
+            for linea in lineas:
+                Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(",")
+                print(f"\nTitulo : {Titulo} - Autor : {Autor} - Año de Publicacion : {Año_de_publicacion} - Genero : {Genero}")
+    except FileNotFoundError:
+        print(f"\nNo hay libros disponnibles") 
     return
 
 def buscarlibros():
     libro_a_buscar = input(f"\nQue libro deseas buscar :")
-    with open("biblioteca.txt","r") as archivo:
-        lineas = archivo.readline()
-        for linea in lineas:
-            if libro_a_buscar in linea:
-                print(f"\nEl libro{libro_a_buscar} esta disponible ")
+    encontrado = False
+    try:
+        with open("biblioteca.txt","r") as archivo:
+            lineas = archivo.readlines()
+            for linea in lineas:
+                if libro_a_buscar in linea:
+                    encontrado = True
+            if encontrado:
+                print(f"\nEl libro {libro_a_buscar} esta disponible ")
             else:
                 print(f"\nEl libro no esta disponible")
-    return        
+    except FileNotFoundError:
+        print(f"\nEl libro que intentas buscar, no esta disponible")
+    return
 
 def eliminarlibros():
     libro_a_eliminar = input(f"\nQue libro desea eliminar? : ")
@@ -71,23 +80,25 @@ def eliminarlibros():
         with open("biblioteca.txt", "r") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
-                Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split("-")
-                if linea != libroseliminados:
-                    libroaguardar = Titulo + "," + Autor + "," + Año_de_publicacion + "," + Genero + "\n"
-                    print(f"\nEl libro {libroaguardar} fue eiminado correctamente")
-                else:
+                Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(",")
+                if Titulo in libro_a_eliminar:
+                    libroseliminados.append(linea)
                     eliminado = True
             if eliminado:
                 with open("biblioteca.txt", "w") as archivo:
                     for linea in libroseliminados:
-                        print(f"\n{linea}")
+                        archivo.write(linea)
+                print(f"\nEl libro {libro_a_eliminar} fue eliminado correctamente")
+            else:
+                print(f"\nEl libro no se encontró en la biblioteca")
     except FileNotFoundError:
         print(f"\nEl libro no pudo ser eliminado")
     return
+
     
                 
 def prestarlibro():
-    libros_prestar = input(f"\nDime el libro que quieras prestar : ")
+    libro_a_prestar = input(f"\nDime el libro que quieras prestar : ")
     librosprestados = []
     prestado = False
     try:
@@ -95,18 +106,20 @@ def prestarlibro():
                 lineas = archivo.readlines()
                 for linea in lineas:
                     Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(",")
-                    if linea != librosprestados:
-                        libroaprestar = Titulo + "," + Autor + "," + Año_de_publicacion + "," + Genero + "\n"
-                        print(f"\nEl libro {libroaprestar} fue prestado exitosamente")
-                    else:
+                    if libro_a_prestar in linea:
+                        librosprestados.append(linea)
                         prestado = True
                 if prestado:
                     with open("bibliotecaprestados.txt", "w") as archivo:
                         for linea in librosprestados:
-                            print(f"\n{linea}")
+                            archivo.write(linea)
+                    print(f"\nEl libro {libro_a_prestar} fue prestado exitosamente")
+                else:
+                    print(f"\nEl libro no se encontró en la biblioteca")
     except FileNotFoundError:
         print(f"\nNo a sido posible prestar el libro")
     return
+
             
 
 def devolverlibro(Biblioteca):
