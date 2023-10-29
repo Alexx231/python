@@ -104,7 +104,7 @@ def devolverlibro(Biblioteca):
     libros_devolver = input(f"\nDime un libro que quieras devolver : ")
     try:
         with open("bibliotecaprestados.txt","a") as archivo:
-            lineas = archivo.readlines()
+            lineas =  archivo.readlines()
             for linea in lineas:
                 if linea in Biblioteca:
                     Biblioteca.append(linea)
@@ -114,3 +114,10 @@ def devolverlibro(Biblioteca):
     
     
 def visualizarlibrosprestados():
+    with open("bibliotecaprestados.txt","r") as archivo:
+        lineas =  archivo.readlines()
+        for linea in lineas:
+            Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(";")
+            print(f"\nTitulo : {Titulo} - Autor : {Autor} - Año de Publicacion : {Año_de_publicacion} - Genero : {Genero}")  
+    return
+
