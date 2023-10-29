@@ -87,7 +87,7 @@ def eliminarlibros():
     
                 
 def prestarlibro():
-    libros_prestar = input(f"\nDime un libro que quieras prestar : ")
+    libros_prestar = input(f"\nDime el libro que quieras prestar : ")
     librosprestados = []
     try:
         with open("bibliotecaprestados.txt","a") as archivo:
@@ -101,6 +101,14 @@ def prestarlibro():
             
 
 def devolverlibro():
+    libros_devolver = input(f"\nDime un libro que quieras devolver : ")
+    libros_a_devolver = []
+    try:
+        with open("bibliotecaprestados.txt","a") as archivo:
+            lineas = archivo.readlines()
+            for linea in lineas:
+                if linea in Biblioteca:
+                    libros_a_devolver.append(linea)
     
     
 def visualizarlibrosprestados():
