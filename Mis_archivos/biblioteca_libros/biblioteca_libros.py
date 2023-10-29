@@ -14,7 +14,7 @@ while True:
     elif opcion == 5:
         Biblioteca = prestarlibro()
     elif opcion == 6:
-        Biblioteca = devolverlibro()
+        Biblioteca = devolverlibro(Biblioteca)
     elif opcion == 7:
         visualizarlibrosprestados()
         break

@@ -100,15 +100,17 @@ def prestarlibro():
     return
             
 
-def devolverlibro():
+def devolverlibro(Biblioteca):
     libros_devolver = input(f"\nDime un libro que quieras devolver : ")
-    libros_a_devolver = []
     try:
         with open("bibliotecaprestados.txt","a") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
                 if linea in Biblioteca:
-                    libros_a_devolver.append(linea)
+                    Biblioteca.append(linea)
+    except FileNotFoundError:
+        print(f"\nNo se pudo devolver el libro")
+    return Biblioteca
     
     
 def visualizarlibrosprestados():
