@@ -36,8 +36,8 @@ def añadirlibro():
         Autor = input(f"\nDame el autor del libro : ")
         Año_de_publicacion = input(f"\nEn que año se publico el libro? : ")
         Genero = input(f"\nDime el genero del libro : ")
-        with open("biblioteca.txt","w") as archivo:
-            archivo.write(Titulo + ";" + Autor + ";" + Año_de_publicacion + ";" + Genero + "\n")
+        with open("biblioteca.txt","a") as archivo:
+            archivo.write(Titulo + "," + Autor + "," + Año_de_publicacion + "," + Genero + "\n")
             print(f"\nEl libro {Titulo} fue añadido correctamente")
     except FileNotFoundError:
         print(f"\nNo se pudo añadir el libro")
@@ -47,17 +47,17 @@ def visualizarlibros():
     with open("biblioteca.txt","r") as archivo:
         lineas =  archivo.readlines()
         for linea in lineas:
-            Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(";")
+            Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(",")
             print(f"\nTitulo : {Titulo} - Autor : {Autor} - Año de Publicacion : {Año_de_publicacion} - Genero : {Genero}")  
     return
 
 def buscarlibros():
     libro_a_buscar = input(f"\nQue libro deseas buscar :")
     with open("biblioteca.txt","r") as archivo:
-        lineas = archivo.readlines()
+        lineas = archivo.readline()
         for linea in lineas:
-            if linea in Biblioteca:
-                print(f"\n{linea}")
+            if libro_a_buscar in linea:
+                print(f"\nEl libro{libro_a_buscar} esta disponible ")
             else:
                 print(f"\nEl libro no esta disponible")
     return        
@@ -71,9 +71,9 @@ def eliminarlibros():
         with open("biblioteca.txt", "r") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
-                Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(";")
+                Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split("-")
                 if linea != libroseliminados:
-                    libroaguardar = Titulo + ";" + Autor + ";" + Año_de_publicacion + ";" + Genero + "\n"
+                    libroaguardar = Titulo + "," + Autor + "," + Año_de_publicacion + "," + Genero + "\n"
                     print(f"\nEl libro {libroaguardar} fue eiminado correctamente")
                 else:
                     eliminado = True
@@ -94,10 +94,10 @@ def prestarlibro():
         with open("bibliotecaprestados.txt","r") as archivo:
                 lineas = archivo.readlines()
                 for linea in lineas:
-                    Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(";")
+                    Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(",")
                     if linea != librosprestados:
-                        libroaprestar = Titulo + ";" + Autor + ";" + Año_de_publicacion + ";" + Genero + "\n"
-                            print(f"\nEl libro {libroaprestar} fue prestado exitosamente")
+                        libroaprestar = Titulo + "," + Autor + "," + Año_de_publicacion + "," + Genero + "\n"
+                        print(f"\nEl libro {libroaprestar} fue prestado exitosamente")
                     else:
                         prestado = True
                 if prestado:
@@ -126,7 +126,7 @@ def visualizarlibrosprestados():
     with open("bibliotecaprestados.txt","r") as archivo:
         lineas =  archivo.readlines()
         for linea in lineas:
-            Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(";")
+            Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(",")
             print(f"\nTitulo : {Titulo} - Autor : {Autor} - Año de Publicacion : {Año_de_publicacion} - Genero : {Genero}")  
     return
 
