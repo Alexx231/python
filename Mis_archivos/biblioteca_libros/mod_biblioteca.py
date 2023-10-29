@@ -19,7 +19,7 @@ Visualizar libros prestados: Mostrar una lista de todos los libros que están pr
 """
 Biblioteca = []
 
-def menu():
+def menu(): #Menu de Programa
     print(f"\n1. Añadir un libro")
     print(f"\n2. Ver libros")
     print(f"\n3. Buscar un libro")
@@ -30,7 +30,7 @@ def menu():
     opcion = int(input(f"\nSelecciona una opcion : "))
     return opcion
 
-def añadirlibro():
+def añadirlibro(): #Funcion que permitira al usuario añadir a la lista (biblioteca) un libro con su titulo,autor,año de publicacion y genero 
     try:
         Titulo = input(f"\nDime el titulo del libro : ")
         Autor = input(f"\nDame el autor del libro : ")
@@ -43,7 +43,7 @@ def añadirlibro():
         print(f"\nNo se pudo añadir el libro")
     return
 
-def visualizarlibros():
+def visualizarlibros(): #Funcion que nos muestra una lista con todos los libros agregados
     try:
         with open("biblioteca.txt","r") as archivo:
             lineas =  archivo.readlines()
@@ -54,7 +54,7 @@ def visualizarlibros():
         print(f"\nNo hay libros disponnibles") 
     return
 
-def buscarlibros():
+def buscarlibros(): #Funcion que permite buscar un libro en concreto de dentro de la lista(biblioteca) y imprimirlo en pantalla
     libro_a_buscar = input(f"\nQue libro deseas buscar :")
     encontrado = False
     try:
@@ -71,7 +71,7 @@ def buscarlibros():
         print(f"\nEl libro que intentas buscar, no esta disponible")
     return
 
-def eliminarlibros():
+def eliminarlibros(): #Funcion que permite eliminar un libro de la lista 
     libro_a_eliminar = input(f"\nQue libro desea eliminar? : ")
     libroseliminados = []
     eliminado = False
@@ -81,14 +81,17 @@ def eliminarlibros():
             lineas = archivo.readlines()
             for linea in lineas:
                 Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(",")
-                if Titulo in libro_a_eliminar:
-                    libroseliminados.append(linea)
+                if Titulo == libro_a_eliminar:
+                    textoaguardar = Titulo + "," + Autor + "," + Año_de_publicacion + "," + Genero + "\n"
+                    libroseliminados.append(textoaguardar)
+                else:
                     eliminado = True
+                    
             if eliminado:
                 with open("biblioteca.txt", "w") as archivo:
                     for linea in libroseliminados:
                         archivo.write(linea)
-                print(f"\nEl libro {libro_a_eliminar} fue eliminado correctamente")
+                        print(f"\nEl libro {libro_a_eliminar} fue eliminado correctamente")
             else:
                 print(f"\nEl libro no se encontró en la biblioteca")
     except FileNotFoundError:
@@ -97,45 +100,58 @@ def eliminarlibros():
 
     
                 
-def prestarlibro():
+def prestarlibro(): #Funcion que registra un libro en concreto que ha sido prestado
     libro_a_prestar = input(f"\nDime el libro que quieras prestar : ")
     librosprestados = []
     prestado = False
     try:
-        with open("bibliotecaprestados.txt","r") as archivo:
+        with open("biblioteca.txt","r") as archivo:
                 lineas = archivo.readlines()
                 for linea in lineas:
                     Titulo,Autor,Año_de_publicacion,Genero = linea.strip().split(",")
                     if libro_a_prestar in linea:
-                        librosprestados.append(linea)
+                        textoaguardar = Titulo + "," + Autor + "," + Año_de_publicacion + "," + Genero + "\n"
+                        librosprestados.append(textoaguardar)
                         prestado = True
                 if prestado:
-                    with open("bibliotecaprestados.txt", "w") as archivo:
+                    with open("biblioteca.txt", "w") as archivo:
                         for linea in librosprestados:
                             archivo.write(linea)
-                    print(f"\nEl libro {libro_a_prestar} fue prestado exitosamente")
-                else:
-                    print(f"\nEl libro no se encontró en la biblioteca")
+                    print(f"\nEl libro {libro_a_prestar} ha sido prestado ")
+                    
+                    with open("bibliotecaprestados.txt", "a") as prestado:
+                        prestado.write(f"\nEl libro que ha sido prestado es {libro_a_prestar}")
+                    
     except FileNotFoundError:
         print(f"\nNo a sido posible prestar el libro")
     return
 
             
 
-def devolverlibro(Biblioteca):
+def devolverlibro(): #Funcion que devuelve a la lista(biblioteca) un libro prestado 
     libros_devolver = input(f"\nDime un libro que quieras devolver : ")
+    librosdevueltos = []
+    devuelto = False
     try:
-        with open("bibliotecaprestados.txt","a") as archivo:
+        with open("bibliotecaprestados.txt","r") as archivo:
             lineas =  archivo.readlines()
             for linea in lineas:
-                if linea in Biblioteca:
-                    Biblioteca.append(linea)
+                if libros_devolver in linea:
+                    print(f"\nEl libro {libros_devolver} ha sido devuelto")
+                    librosdevueltos.append(linea)
+                    devuelto = True
+            if devuelto:
+                with open("bibliotecaprestados.txt", "w") as archivo:
+                    for libro in librosdevueltos:
+                        archivo.write(f"\nlibro")
+                with open("biblioteca.txt", "a") as archivo:
+                    archivo.write(f"\n{libro}")
     except FileNotFoundError:
         print(f"\nNo se pudo devolver el libro")
-    return Biblioteca
+    return
     
     
-def visualizarlibrosprestados():
+def visualizarlibrosprestados(): #Funcion que permite visualizar los libros que hay dentro de la lista de libros prestados
     with open("bibliotecaprestados.txt","r") as archivo:
         lineas =  archivo.readlines()
         for linea in lineas:
