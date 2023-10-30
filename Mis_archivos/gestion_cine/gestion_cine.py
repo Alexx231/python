@@ -4,13 +4,13 @@ while True:
     opcion = menu()
     
     if opcion == 1:
-        anadirpelicula()
+        cine = anadirpelicula()
     elif opcion == 2:
-        visualizarpeliculas()
+        cine = visualizarpeliculas()
     elif opcion == 3:
-        buscarpelicula()
+        cine = buscarpelicula()
     elif opcion == 4:
-        eliminarpelicula()
+        cine = eliminarpelicula()
     elif opcion == 5:
         print(f"\nHASTA LA PROXIMA")
         break
