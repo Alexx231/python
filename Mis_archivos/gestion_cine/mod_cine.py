@@ -19,7 +19,9 @@ def menu():
     print(f"\n3. Buscar pelicula")
     print(f"\n4. Eliminar una pelicula")
     print(f"\n5. Salir")
-    
+    opcion = int(input(f"\nSelecciona una de las opciones dadas : "))
+    return opcion
+
 def anadirpelicula():
     titulo = input(f"\nEscribe el titulo de una pelicula : ")
     director = input(f"\nQuien es el director? : ")
@@ -32,9 +34,7 @@ def anadirpelicula():
     except FileNotFoundError:
         print(f"\nNo ha sido posible añadir la pelicula ")
     return
-
-            
-       
+   
 def visualizarpeliculas():
     try:
         with open("cine.txt","r") as archivo:
@@ -45,8 +45,7 @@ def visualizarpeliculas():
     except FileNotFoundError:
         print(f"\nNo hay peliculas disponibles")
     return
-            
-    
+              
 def buscarpelicula():
     pelicula_a_buscar = input(f"\nDime la pelicula que quieres buscar : ")
     try:
@@ -60,14 +59,14 @@ def buscarpelicula():
     return 
     
 def eliminarpelicula():
-    pelicula_a_eliminar = input(f"\nDime la pelicula que quieres eliminar ")
+    pelicula_a_eliminar = input(f"\nDime la pelicula que deseas eliminar : ")
     peliculaseliminadas = []
     eliminado = False
     try:
         with open("cine.txt","r") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
-                if pelicula_a_eliminar != linea:
+                if pelicula_a_eliminar in linea:
                     peliculaseliminadas.append(linea)
                     print(f"\nLa pelicula {pelicula_a_eliminar} ha sido eliminada correctamente  ")
                     eliminado = True
