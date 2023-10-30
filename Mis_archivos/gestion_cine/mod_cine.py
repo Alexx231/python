@@ -67,12 +67,13 @@ def eliminarpelicula():
             lineas = archivo.readlines()
             for linea in lineas:
                 if pelicula_a_eliminar in linea:
-                    peliculaseliminadas.append(linea)
-                    print(f"\nLa pelicula {pelicula_a_eliminar} ha sido eliminada correctamente  ")
+                    print(f"\nLa pelicula {pelicula_a_eliminar} ha sido eliminada correctamente ")
                     eliminado = True
+                else:
+                    peliculaseliminadas.append(linea)
             if eliminado:
                 with open("cine.txt","w") as archivo:
-                    for linea in lineas:
+                    for linea in peliculaseliminadas:
                         archivo.write(linea)
     except FileNotFoundError:
         print(f"\nNo se a podido eliminar la pelicula") 
