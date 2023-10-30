@@ -11,6 +11,7 @@ Buscar una película por título o director: Permitir al usuario buscar una pel�
 Eliminar una película: Permitir al usuario eliminar una película de la lista.
 
 """
+cine = []
 
 def menu():
     print(f"\n1. Añadir una pelicula")
@@ -76,3 +77,4 @@ def eliminarpelicula():
                         archivo.write(linea)
     except FileNotFoundError:
         print(f"\nNo se a podido eliminar la pelicula") 
+    return
