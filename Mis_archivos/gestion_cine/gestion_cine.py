@@ -1,4 +1,4 @@
-from mod_cine import *    
+from mod_cine import *    #Bucle principal
     
 while True:
     opcion = menu()
