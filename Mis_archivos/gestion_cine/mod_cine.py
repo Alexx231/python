@@ -23,12 +23,25 @@ def anadirpelicula():
     titulo = input(f"\nEscribe el titulo de una pelicula : ")
     director = input(f"\nQuien es el director? : ")
     duracion = input(f"\nCuanto dura? : ")
-    Clasificacion = input(f"\nEscribe cual es su clasificacion : ")
+    clasificacion = input(f"\nEscribe cual es su clasificacion : ")
     try:
-        with open("cine.txt", "a") as archivo:
+        with open("cine.txt","a") as archivo:
+            archivo.write(titulo + "," + director + "," + duracion + "," + clasificacion + "\n")
+            print(f"\nLa pelicula {titulo} fue añadida correctamente ")
+    except FileNotFoundError:
+        print(f"\nNo ha sido posible añadir la pelicula ")
+    return
             
             
 def visualizarpeliculas():
+    try:
+        with open("cine.txt","r") as archivo:
+            lineas = archivo.readlines()
+            for linea in lineas:
+                print(f"\n{linea}")
+    except FileNotFoundError:
+        print(f"\nNo hay peliculas disponibles")
+            
     
 def buscarpelicula():
     
