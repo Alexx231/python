@@ -11,9 +11,9 @@ Buscar una película por título o director: Permitir al usuario buscar una pel�
 Eliminar una película: Permitir al usuario eliminar una película de la lista.
 
 """
-cine = []
+cine = [] #Lista vacia en la que se añaden valores introducidos por el usuario
 
-def menu():
+def menu(): #Menu de nuestro programa
     print(f"\n1. Añadir una pelicula")
     print(f"\n2. Visualizar peliculas")
     print(f"\n3. Buscar pelicula")
@@ -22,7 +22,7 @@ def menu():
     opcion = int(input(f"\nSelecciona una de las opciones dadas : "))
     return opcion
 
-def anadirpelicula():
+def anadirpelicula():#Funcion que añade peliculas que el usuario nombra a el archivo cine.txt
     titulo = input(f"\nEscribe el titulo de una pelicula : ")
     director = input(f"\nQuien es el director? : ")
     duracion = input(f"\nCuanto dura? : ")
@@ -35,7 +35,7 @@ def anadirpelicula():
         print(f"\nNo ha sido posible añadir la pelicula ")
     return
    
-def visualizarpeliculas():
+def visualizarpeliculas():#Funcion que imprime todas las peliculas añadidas a cine.txt en pantalla
     try:
         with open("cine.txt","r") as archivo:
             lineas = archivo.readlines()
@@ -46,7 +46,7 @@ def visualizarpeliculas():
         print(f"\nNo hay peliculas disponibles")
     return
               
-def buscarpelicula():
+def buscarpelicula():#Funcion que imprime en pantalla el libro que el usuario escribe y dice si esta disponible o no
     pelicula_a_buscar = input(f"\nDime la pelicula que quieres buscar : ")
     try:
         with open("cine.txt","r") as archivo:
@@ -58,7 +58,7 @@ def buscarpelicula():
         print(f"\nLa pelicula {pelicula_a_buscar} no esta disponible")
     return 
     
-def eliminarpelicula():
+def eliminarpelicula():#Funcion que elimina una pelicula agregada anteriormente y la almacena en otra lista correspondiente
     pelicula_a_eliminar = input(f"\nDime la pelicula que deseas eliminar : ")
     peliculaseliminadas = []
     eliminado = False
