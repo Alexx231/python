@@ -6,9 +6,9 @@ while True:
     if opcion == 1:
         cine = anadirpelicula()
     elif opcion == 2:
-        cine = visualizarpeliculas()
+        visualizarpeliculas()
     elif opcion == 3:
-        cine = buscarpelicula()
+        buscarpelicula()
     elif opcion == 4:
         cine = eliminarpelicula()
     elif opcion == 5:
