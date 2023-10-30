@@ -31,18 +31,48 @@ def anadirpelicula():
     except FileNotFoundError:
         print(f"\nNo ha sido posible añadir la pelicula ")
     return
+
             
-            
+       
 def visualizarpeliculas():
     try:
         with open("cine.txt","r") as archivo:
             lineas = archivo.readlines()
             for linea in lineas:
-                print(f"\n{linea}")
+                titulo,director,duracion,clasificacion = linea.strip().split(",")
+                print(f"Titulo : {titulo} - Director : {director} - Duracion : {duracion} - Clasificacion : {clasificacion}")
     except FileNotFoundError:
         print(f"\nNo hay peliculas disponibles")
+    return
             
     
 def buscarpelicula():
+    pelicula_a_buscar = input(f"\nDime la pelicula que quieres buscar : ")
+    try:
+        with open("cine.txt","r") as archivo:
+            lineas = archivo.readlines()
+            for linea in lineas:
+                if pelicula_a_buscar in linea:
+                    print(f"\nLa pelicula {pelicula_a_buscar} esta disponible")          
+    except FileNotFoundError:
+        print(f"\nLa pelicula {pelicula_a_buscar} no esta disponible")
+    return 
     
 def eliminarpelicula():
+    pelicula_a_eliminar = input(f"\nDime la pelicula que quieres eliminar ")
+    peliculaseliminadas = []
+    eliminado = False
+    try:
+        with open("cine.txt","r") as archivo:
+            lineas = archivo.readlines()
+            for linea in lineas:
+                if pelicula_a_eliminar != linea:
+                    peliculaseliminadas.append(linea)
+                    print(f"\nLa pelicula {pelicula_a_eliminar} ha sido eliminada correctamente  ")
+                    eliminado = True
+            if eliminado:
+                with open("cine.txt","w") as archivo:
+                    for linea in lineas:
+                        archivo.write(linea)
+    except FileNotFoundError:
+        print(f"\nNo se a podido eliminar la pelicula") 
