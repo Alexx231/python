@@ -213,11 +213,16 @@ SELECT DISTINCT nombre_linea_metro
 FROM lineas_metro
 WHERE id_linea_metro BETWEEN 1 AND 4;
 
-SELECT
-FROM
+SELECT nombre_barrio 
+FROM barrios
+WHERE id_barrio IS NOT NULL
+GROUP BY id_barrio;
 
-SELECT
-FROM
 
-SELECT
-FROM
+SELECT nombre_punto_interes
+FROM puntos_interes
+WHERE nombre_punto_interes LIKE 'P%' 'R%';
+
+SELECT *
+FROM puntos_interes
+WHERE tipo_punto_interes IS NULL AND nombre_punto_interes LIKE 'M%' 'S%' ;
