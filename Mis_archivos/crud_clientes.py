@@ -4,7 +4,7 @@ def crear_clientes(clientes_a_guardar):
     try:
         conexion = conexion_clientes()
         cursor = conexion.cursor()
-        query ="INSERT INTO clientes (clientes) VALUES (%s)"
+        query ="INSERT INTO clientes (nombre_cliente, telefono_cliente) VALUES (%s, %s)"
         valores = clientes_a_guardar
         cursor.execute(query,valores)
         conexion.commit()
