@@ -47,7 +47,25 @@ def buscar_clientes():
     return
 
 def eliminar_clientes():
-    
+    cliente_a_eliminar = (f"\nQue cliente desea eliminar? :")
+    clienteseliminados = []
+    eliminado = False
+    try:
+        with open("clientes.txt","r") as archivo:
+            lineas = archivo.readlines()
+            for linea in lineas:
+                if cliente_a_eliminar in linea:
+                    print(f"\nEl cliente {cliente_a_eliminar} fue eliminado correctamente ")
+                    eliminado = True
+                else:
+                    clienteseliminados.append(linea)
+            if eliminado:
+                with open("clientes.txt","w") as archivo:
+                    for linea in clienteseliminados:
+                        archivo.write(linea)
+    except FileNotFoundError:
+        print(f"\nNo se ha podido eliminar el cliente") 
+    return                    
     
         
         
