@@ -1,4 +1,4 @@
-from BDD import *
+from cosas_varias.BDD import *
 
 def anadir_direccion(direccion_a_guardar):
     try:

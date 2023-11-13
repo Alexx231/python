@@ -1,4 +1,4 @@
-import ejercicio_CRUD
+import cosas_varias.ejercicio_CRUD as ejercicio_CRUD
 
 ejercicio_CRUD.anadir_direccion("La casa de Pepe, 209")
 ejercicio_CRUD.anadir_direccion("La Guarderia, 389")
