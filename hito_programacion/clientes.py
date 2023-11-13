@@ -7,13 +7,13 @@ print(f"\n4. Eliminar Cliente")
 
 def registro_cliente():
     try:
-        Nombre = (f"\nDime el nombre del cliente: ")
-        Apellido = (f"\nDime el apellido del cliente: ")
-        Telefono = (f"\nDime el telefono del cliente: ")
-        DNI = (f"\nDime el numero de identificacion del cliente: ")
+        nombre = (f"\nDime el nombre del cliente: ")
+        apellido = (f"\nDime el apellido del cliente: ")
+        telefono = (f"\nDime el telefono del cliente: ")
+        dni = (f"\nDime el numero de identificacion del cliente: ")
         with open("clientes.txt","a") as archivo:
-            archivo.write(Nombre + "," + Apellido + "," + Telefono + "," + DNI + "\n")
-            print(f"\nEl cliente {Nombre} fue registrado correctamente")
+            archivo.write(nombre + "," + apellido + "," + telefono + "," + dni + "\n")
+            print(f"\nEl cliente {nombre} fue registrado correctamente")
     except FileNotFoundError:
         print(f"\nEl proceso de registro fue erroneo")
     return
@@ -23,8 +23,8 @@ def ver_cliente():
         with open("clientes.txt","r") as archivo:
             lineas =  archivo.readlines()
             for linea in lineas:
-                Nombre,Apellido,Telefono,DNI = linea.strip().split(",")
-                print(f"\nNombre y Apellido : {Nombre} {Apellido} - Telefono : {Telefono} - DNI {DNI}")
+                nombre,apellido,telefono,dni = linea.strip().split(",")
+                print(f"\nNombre y Apellido : {nombre} {apellido} - Telefono : {telefono} - DNI {dni}")
     except FileNotFoundError:
         print(f"\nNo hay clientes registrados") 
     return
