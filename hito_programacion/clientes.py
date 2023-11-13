@@ -5,6 +5,8 @@ print(f"\n3. Buscar Cliente")
 print(f"\n4. Eliminar Cliente")
 """
 
+clientes = []
+
 def registro_cliente():
     try:
         nombre = (f"\nDime el nombre del cliente: ")

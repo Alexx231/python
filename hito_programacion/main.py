@@ -24,19 +24,26 @@ while True:
     opcion = menu()
     
     if opcion == 1:
-        Biblioteca = añadirlibro()
+        clientes = registro_cliente()
     elif opcion == 2:
-        visualizarlibros()
+        ver_cliente()
     elif opcion == 3:
-        buscarlibros()
+        buscar_clientes()
     elif opcion == 4:
-        Biblioteca = eliminarlibros()
+        clientes = eliminar_clientes()
     elif opcion == 5:
-        Biblioteca = prestarlibro()
+        compras = realizar_compra()
     elif opcion == 6:
-        Biblioteca = devolverlibro(Biblioteca)
+        compras = seguimiento_compra()
     elif opcion == 7:
-        visualizarlibrosprestados()
-        break
+        articulos = registrar_articulo()
+    elif opcion == 8:
+        ver_articulos()
+    elif opcion == 9:
+        buscar_articulo()
+    elif opcion == 10:
+        articulos = eliminar_articulo()
+    elif opcion == 11:
+        print(f"\nGracias por utilizar nuestro programa")
     else:
         print(f"\nLa opcion seleccionada no es valida ")

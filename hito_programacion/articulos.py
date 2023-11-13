@@ -5,6 +5,8 @@ print(f"9. Buscar Articulo")
 print(f"10. Eliminar Articulo") 
 """
 
+articulos = []
+
 def registrar_articulo():
     try:
         nombre_articulo = (f"\nDime el nombre del articulo: ")
