@@ -1,9 +1,12 @@
 compras = []
 
+def seguimiento_compra():
+    print(f"\n¡Gracias por tu compra! Tu pedido ha sido procesado.")
+    
 def realizar_compra():
-    nombre_cliente = (f"Dime el nombre del cliente que esta realizando la compra:")
-    producto_a_comprar = (f"Que producto desea comprar?:")
-    unidades = (f"Cuantas unidades desea comprar?:")
+    nombre_cliente = input(f"Dime el nombre del cliente que esta realizando la compra:")
+    producto_a_comprar = input(f"Que producto desea comprar?:")
+    unidades = input(f"Cuantas unidades desea comprar?:")
     try:
         with open("articulos.txt","r") as archivo:
             lineas = archivo.readlines()
@@ -14,13 +17,6 @@ def realizar_compra():
                          archivo.write(f"{nombre_cliente} - {unidades} - {producto[1]}\n")
                          print(f"\nEl cliente{nombre_cliente} ha comprado {unidades} unidades de{producto[1]}\n")
                          seguimiento_compra()
-    except ValueError:
+    except FileNotFoundError:
         print(f"No se pudo realizar la compra")
     return
-                
-    
-    
-    
-    
-def seguimiento_compra():
-    print(f"\n¡Gracias por tu compra! Tu pedido ha sido procesado.")

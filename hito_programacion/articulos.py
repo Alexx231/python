@@ -23,7 +23,7 @@ def ver_articulos():
     return
 
 def buscar_articulo():
-    articulo_a_buscar = (f"\nQue articulo desea buscar? : ")
+    articulo_a_buscar = input(f"\nQue articulo desea buscar? : ")
     encontrado = False
     try:
         with open("articulos.txt","r") as archivo:
@@ -40,7 +40,7 @@ def buscar_articulo():
     return
         
 def eliminar_articulo():
-    articulo_a_eliminar = (f"\nQue articulo desea eliminar? :")
+    articulo_a_eliminar = input(f"\nQue articulo desea eliminar? :")
     articuloseliminados = []
     eliminado = False
     try:

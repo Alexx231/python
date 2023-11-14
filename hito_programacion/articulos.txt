@@ -1,3 +1,20 @@
-
-Dime el nombre del articulo: ,
-Dime el tipo de articulo que es
+Leche Entera,Lácteos
+Pan Integral,Panadería
+Manzanas Gala,Frutas
+Pollo Fresco,Carnicería
+Arroz Basmati,Alimentos Secos
+Yogur Natural,Lácteos
+Papel Higiénico Doble Hoja,Artículos de Limpieza
+Aceite de Oliva Extra Virgen,Aceites y Vinagres
+Detergente para Ropa,Artículos de Limpieza
+Huevos de Granja,Huevos y Lácteos
+Pasta de Trigo Integral,Alimentos Secos
+Zanahorias Frescas,Verduras
+Jabón de Manos Antibacterial,Artículos de Higiene
+Cerveza Artesanal IPA,Bebidas
+Atún en Conserva al Natural,Conservas
+Tomate en Rama,Verduras
+Queso Cheddar Añejo,Quesos
+Galletas Integrales,Snacks
+Salmón Fresco,Pescadería
+Salsa de Tomate Orgánica,Salsas y Condimentos
