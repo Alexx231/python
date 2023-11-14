@@ -3,7 +3,7 @@ articulos = []
 def registrar_articulo():
     try:
         nombre_articulo = input(f"\nDime el nombre del articulo: ")
-        tipo_articulo = input(f"\nDime el tipo de articulo que es")
+        tipo_articulo = input(f"\nDime el tipo de articulo que es: ")
         with open("articulos.txt","a") as archivo:
             archivo.write(nombre_articulo + "," + tipo_articulo + "\n")
             print(f"\nEl articulo {nombre_articulo} ha sido registrado correctamente")
