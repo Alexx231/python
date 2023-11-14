@@ -20,9 +20,7 @@ def realizar_compra():
                 if producto_a_comprar in producto[1]:
                     productoscomprados.append(producto)
                 with open("compras.txt","a") as archivo:
-                        for producto in productoscomprados:
-                            archivo.write(f"{nombre_cliente} - {unidades} - {producto[1]}\n")
-                            print(f"\nEl cliente{nombre_cliente} ha comprado {unidades} unidades de{producto[1]}\n")
+                        archivo.write(f"\nEl cliente {nombre_cliente} ha comprado {unidades} unidades de {producto[1]}")
                 seguimiento_compra()
                 break
     except FileNotFoundError:

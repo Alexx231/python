@@ -1,0 +1,4 @@
+
+El clienteJuan ha comprado 3 unidades deLácteos
+El cliente Juan ha comprado 6 unidades de Lácteos
+El cliente Juan ha comprado 5 unidades de Lácteos
