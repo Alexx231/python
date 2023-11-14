@@ -1,10 +1,3 @@
-"""
-print(f"\n1. Registro de Cliente")
-print(f"\n2. Ver Clientes")
-print(f"\n3. Buscar Cliente")
-print(f"\n4. Eliminar Cliente")
-"""
-
 clientes = []
 
 def registro_cliente():

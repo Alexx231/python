@@ -1,10 +1,3 @@
-"""
-print(f"7. Registro de Articulo")
-print(f"8. Ver Articulos")
-print(f"9. Buscar Articulo")
-print(f"10. Eliminar Articulo") 
-"""
-
 articulos = []
 
 def registrar_articulo():
@@ -44,6 +37,7 @@ def buscar_articulo():
                 print(f"\nEl articulo no esta registrado")
     except FileNotFoundError:
         print(f"\nNo se ha podido visualizar los articulos")
+    return
         
 def eliminar_articulo():
     articulo_a_eliminar = (f"\nQue articulo desea eliminar? :")
