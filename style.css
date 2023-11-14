@@ -1,0 +1,130 @@
+*{
+    margin: 9;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background: #000000;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 20px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: double;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: flex;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: darkgray;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background: rgb(119, 118, 118);
+}
+
+.origenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.origenes {
+    height: 70vh !important;
+    background: url(Evolución_lenguaje_de_marcas.jpg) no-repeat center;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 60;
+    text-transform: uppercase;
+    color: rgb(87, 9, 155);
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: black;
+    padding: 0 100px;
+}
+
+.content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.diferentes_estandares {
+    padding: 30px;
+    background: #5516ca;
+}
+
+.origenes_diferencias {
+    background: navajowhite;
+}
+
+.principales_etiquetas {
+    background: url() no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.principales_elementos {
+    padding-top: 20px;
+    background: khaki;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau{
+        height: 120vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+.animarlogo {
+    height: 54px;
+    width: 100px;
+    margin-left: -30px;
+    animation: alternate-reverse;
+}
