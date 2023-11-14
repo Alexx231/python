@@ -1,11 +1,11 @@
 clientes = []
 
 def registro_cliente():
+    nombre = input(f"\nDime el nombre del cliente: ")
+    apellido = input(f"\nDime el apellido del cliente: ")
+    telefono = input(f"\nDime el telefono del cliente: ")
+    dni = input(f"\nDime el numero de identificacion del cliente: ")
     try:
-        nombre = (f"\nDime el nombre del cliente: ")
-        apellido = (f"\nDime el apellido del cliente: ")
-        telefono = (f"\nDime el telefono del cliente: ")
-        dni = (f"\nDime el numero de identificacion del cliente: ")
         with open("clientes.txt","a") as archivo:
             archivo.write(nombre + "," + apellido + "," + telefono + "," + dni + "\n")
             print(f"\nEl cliente {nombre} fue registrado correctamente")
@@ -19,13 +19,13 @@ def ver_cliente():
             lineas =  archivo.readlines()
             for linea in lineas:
                 nombre,apellido,telefono,dni = linea.strip().split(",")
-                print(f"\nNombre y Apellido : {nombre} {apellido} - Telefono : {telefono} - DNI {dni}")
+                print(f"\nNombre y Apellido : {nombre} {apellido} - Telefono : {telefono} - DNI: {dni}")
     except FileNotFoundError:
-        print(f"\nNo hay clientes registrados") 
+        print(f"\nNo hay clientes registrados")
     return
 
 def buscar_clientes():
-    cliente_a_buscar = (f"\nQue cliente desea buscar? : ")
+    cliente_a_buscar = input(f"\nQue cliente desea buscar: ")
     encontrado = False
     try:
         with open("clientes.txt","r") as archivo:
@@ -42,7 +42,7 @@ def buscar_clientes():
     return
 
 def eliminar_clientes():
-    cliente_a_eliminar = (f"\nQue cliente desea eliminar? :")
+    cliente_a_eliminar = input(f"\nQue cliente desea eliminar? :")
     clienteseliminados = []
     eliminado = False
     try:

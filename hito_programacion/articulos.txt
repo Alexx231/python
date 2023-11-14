@@ -1,0 +1,3 @@
+
+Dime el nombre del articulo: ,
+Dime el tipo de articulo que es
