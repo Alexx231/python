@@ -21,6 +21,7 @@ def realizar_compra():
                         archivo.write(f"{nombre_cliente} - {unidades} - {producto[1]}\n")
                         print(f"\nEl cliente{nombre_cliente} ha comprado {unidades} unidades de{producto[1]}\n")
                     seguimiento_compra()
+                    break
     except FileNotFoundError:
         print(f"No se pudo realizar la compra")
     return
