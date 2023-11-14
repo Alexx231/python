@@ -5,7 +5,7 @@ def registrar_articulo():
         nombre_articulo = input(f"\nDime el nombre del articulo: ")
         tipo_articulo = input(f"\nDime el tipo de articulo que es: ")
         with open("articulos.txt","a") as archivo:
-            archivo.write(nombre_articulo + "," + tipo_articulo + "\n")
+            archivo.write("\n" + nombre_articulo + "," + tipo_articulo)
             print(f"\nEl articulo {nombre_articulo} ha sido registrado correctamente")
     except FileNotFoundError:
         print(f"\nEl proceso de registro fue erroneo")

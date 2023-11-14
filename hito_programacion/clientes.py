@@ -7,7 +7,7 @@ def registro_cliente():
     dni = input(f"\nDime el numero de identificacion del cliente: ")
     try:
         with open("clientes.txt","a") as archivo:
-            archivo.write(nombre + "," + apellido + "," + telefono + "," + dni + "\n")
+            archivo.write("\n" + nombre + "," + apellido + "," + telefono + "," + dni)
             print(f"\nEl cliente {nombre} fue registrado correctamente")
     except FileNotFoundError:
         print(f"\nEl proceso de registro fue erroneo")
