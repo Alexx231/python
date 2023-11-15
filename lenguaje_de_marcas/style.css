@@ -13,6 +13,10 @@ body {
     grid-template-columns: 1fr;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .head {
     display: grid;
     grid-template-rows: 1fr;
@@ -29,6 +33,7 @@ body {
 .logo img {
     height: 50px; 
     width: 50px; 
+    margin-left: 75px;
 }
 
 .logo a {
