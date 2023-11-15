@@ -1,82 +1,84 @@
 *{
-    margin: 9;
+    margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
-
 
 body {
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-.head{
-    display: flex;
+.head {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
-    height: 60px;
-    background: #000000;
+    height: 70px;
+    background-color: #000000;
     position: fixed;
     width: 100%;
+    z-index: 1000;
+    padding: 0 20px;
 }
 
-.navbar{
-    display: flex;
-    margin-right: 20px;
-}
-
-.logo {
-    margin-left: 30px;
+.logo img {
+    height: 50px; 
+    width: 50px; 
 }
 
 .logo a {
-    text-decoration: double;
-    color: antiquewhite;
-    text-transform: uppercase;
-    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
-.navbar a {
+.navbar {
     display: flex;
-    padding: 15px;
-    color: rgb(255, 255, 255);
-    text-decoration: darkgray;
-    text-transform: uppercase;
-    font-size: 15px;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    width: 100%;
+    list-style: none;
 }
 
-.navbar a:hover {
-    background: rgb(119, 118, 118);
+.navbar a, .navbar .logo {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0 65px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
+
+.navbar a:hover, .navbar .logo:hover {
+    color: #ffffff;
+    background-color: #929394;
+}
+
 
 .origenes {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.origenes {
-    height: 70vh !important;
+    height: 70vh;
     background: url(Evolución_lenguaje_de_marcas.jpg) no-repeat center;
 }
 
 .title {
-    margin-bottom: 50px;
-    font-size: 50px;
-    font-weight: 60;
+    margin-bottom: 50px; 
+    font-size: 50px; 
+    font-weight: 600;
     text-transform: uppercase;
     color: rgb(87, 9, 155);
 }
 
 p {
-    margin-bottom: 40px;
-    font-size: 18px;
+    margin-bottom: 40px; 
+    font-size: 18px; 
     color: black;
     padding: 0 100px;
 }
@@ -90,12 +92,14 @@ p {
 }
 
 .diferentes_estandares {
-    padding: 30px;
+    padding: 30px; 
     background: #5516ca;
+    color: #ffffff; 
 }
 
 .origenes_diferencias {
     background: navajowhite;
+    color: #333; 
 }
 
 .principales_etiquetas {
@@ -103,19 +107,19 @@ p {
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+    color: #333; 
 }
 
 .principales_elementos {
-    padding-top: 20px;
+    padding: 20px 0;
     background: khaki;
-    padding-bottom: 0;
 }
 
 @media (max-width: 768px) {
 
     .title {
-        margin-bottom: 0;
-        font-size: 40px;
+        margin-bottom: 16px; 
+        font-size: 40px; 
     }
 
     .sau{
