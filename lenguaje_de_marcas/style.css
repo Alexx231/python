@@ -130,17 +130,17 @@ p {
 
 .text-content1 {
     width: 60%;
+    font-size: 18px;
 }
 
 .image-content img {
     width: 110%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .origenes_diferencias {
-    background: navajowhite;
-    color: #333; 
+    background: #aca9a9;
 }
 
 .title3{
@@ -148,7 +148,7 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     color: rgb(96, 95, 97);
-    margin-top: 50px; 
+    margin-top: 78px; 
 }
 
 .text-content2 {
@@ -169,34 +169,37 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     color: rgb(96, 95, 97);
-    margin-top: -20px; 
+    margin-top: -5px; 
 }
 
 
 .principales_elementos {
     padding: 20px 0;
-    background: khaki;
+    background: whitesmoke;
+}
+
+.title5{
+    font-size: 50px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(96, 95, 97);
+    margin-top: -60px; 
 }
 
 @media (max-width: 768px) {
-
-    .title {
-        margin-bottom: 16px; 
-        font-size: 40px; 
+    .title, .title5 {
+        font-size: 30px; 
     }
 
     .sau{
-        height: 120vh;
+        height: auto;
     }
 
     .navbar {
         display: none;
     }
-}
 
-.animarlogo {
-    height: 54px;
-    width: 100px;
-    margin-left: -30px;
-    animation: alternate-reverse;
+    .principales_elementos {
+        padding: 10px 0;
+    }
 }
