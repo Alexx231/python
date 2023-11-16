@@ -186,6 +186,50 @@ p {
     margin-top: -60px; 
 }
 
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    width: 45%;
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.info {
+    margin-left: 100px;
+}
+
+.footer-section p, .footer-section ul {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.footer-section a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+}
+
 @media (max-width: 768px) {
     .title, .title5 {
         font-size: 30px; 
