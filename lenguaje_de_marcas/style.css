@@ -13,10 +13,6 @@ body {
     grid-template-columns: 1fr;
 }
 
-h2 {
-    margin-top: -200px; /* Ajusta este valor según tus necesidades */
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -69,6 +65,9 @@ html {
     background-color: #929394;
 }
 
+header ul {
+    font-size: 16px; 
+}
 
 .origenes {
     display: flex;
@@ -78,12 +77,20 @@ html {
     background: url() no-repeat center;
 }
 
-.title {
-    margin-bottom: 50px; 
+.title1 {
+    display: flex;
     font-size: 50px; 
     font-weight: 600;
     text-transform: uppercase;
-    color: rgb(87, 9, 155);
+    color: rgb(96, 95, 97);
+    margin-top: 40px; 
+}
+
+
+.subtitle {
+    font-size: 30px; 
+    color: rgb(135, 133, 136); 
+    margin-top: 20px; 
 }
 
 p {
@@ -94,7 +101,7 @@ p {
 }
 
 .content {
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,8 +110,32 @@ p {
 
 .diferentes_estandares {
     padding: 30px; 
-    background: #5516ca;
+    background: #000000;
     color: #ffffff; 
+}
+
+.title2{
+    display: flex;
+    font-size: 50px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(96, 95, 97);
+    margin-top: -25px; 
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content1 {
+    width: 60%;
+}
+
+.image-content img {
+    width: 110%;
+    height: auto;
+    margin-top: 10px;
 }
 
 .origenes_diferencias {
@@ -112,13 +143,35 @@ p {
     color: #333; 
 }
 
+.title3{
+    font-size: 50px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(96, 95, 97);
+    margin-top: 50px; 
+}
+
+.text-content2 {
+    width: 60%;
+}
+
+
 .principales_etiquetas {
-    background: url() no-repeat center;
+    background: url(html5.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
     color: #333; 
 }
+
+.title4{
+    font-size: 50px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(96, 95, 97);
+    margin-top: -20px; 
+}
+
 
 .principales_elementos {
     padding: 20px 0;
