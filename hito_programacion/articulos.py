@@ -36,9 +36,9 @@ def buscar_articulo():
                 if articulo_a_buscar in linea:
                     encontrado = True
             if encontrado:
-                print(f"\nEl articulo {articulo_a_buscar} esta registrado")
+                print(f"\nEl articulo {articulo_a_buscar} esta disponible")
             else:
-                print(f"\nEl articulo no esta registrado")
+                print(f"\nEl articulo no esta disponible")
     except FileNotFoundError:
         print(f"\nNo se ha podido visualizar los articulos")
     return
