@@ -28,12 +28,23 @@ html {
     width: 100%;
     z-index: 1000;
     padding: 0 20px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
 }
 
 .logo img {
     height: 50px; 
     width: 50px; 
     margin-left: 75px;
+
+    @media (max-width: 768px) {
+        height: 40px;
+        width: 40px;
+        margin-left: 20px;
+    }
 }
 
 .logo a {
@@ -48,6 +59,10 @@ html {
     color: #ffffff;
     width: 100%;
     list-style: none;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .navbar a, .navbar .logo {
@@ -58,6 +73,10 @@ html {
     text-decoration: none;
     transition: color 0.3s ease;
     background-color: 0.3s ease;
+
+    @media (max-width: 768px) {
+        margin: 0 20px;
+    }
 }
 
 .navbar a:hover, .navbar .logo:hover {
@@ -67,6 +86,10 @@ html {
 
 header ul {
     font-size: 16px; 
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
 }
 
 .origenes {
@@ -74,7 +97,10 @@ header ul {
     justify-content: center;
     align-items: center;
     height: 70vh;
-    background: url() no-repeat center;
+
+    @media (max-width: 768px) {
+        height: 100vh;
+    }
 }
 
 .title1 {
@@ -84,6 +110,11 @@ header ul {
     text-transform: uppercase;
     color: rgb(96, 95, 97);
     margin-top: 40px; 
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        margin-top: 20px;
+    }
 }
 
 
@@ -91,6 +122,10 @@ header ul {
     font-size: 30px; 
     color: rgb(135, 133, 136); 
     margin-top: 20px; 
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 p {
@@ -98,6 +133,11 @@ p {
     font-size: 18px; 
     color: black;
     padding: 0 100px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        padding: 0 50px;
+    }
 }
 
 .content {
@@ -106,12 +146,20 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        height: 100vh;
+    }
 }
 
 .diferentes_estandares {
     padding: 30px; 
     background: #000000;
     color: #ffffff; 
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
 }
 
 .title2{
@@ -121,22 +169,41 @@ p {
     text-transform: uppercase;
     color: rgb(96, 95, 97);
     margin-top: -25px; 
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        margin-top: 20px;
+    }
 }
 
 .content-wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .text-content1 {
     width: 60%;
     font-size: 18px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 16px;
+    }
 }
 
 .image-content img {
     width: 110%;
     height: auto;
     margin-top: 40px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 .origenes_diferencias {
@@ -149,10 +216,19 @@ p {
     text-transform: uppercase;
     color: rgb(96, 95, 97);
     margin-top: 78px; 
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        margin-top: 40px;
+    }
 }
 
 .text-content2 {
     width: 60%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 
@@ -162,6 +238,10 @@ p {
     background-size: cover;
     text-align: center;
     color: #333; 
+
+    @media (max-width: 768px) {
+        background-size: contain;
+    }
 }
 
 .title4{
@@ -170,6 +250,11 @@ p {
     text-transform: uppercase;
     color: rgb(96, 95, 97);
     margin-top: -5px; 
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        margin-top: 0;
+    }
 }
 
 
@@ -184,6 +269,11 @@ p {
     text-transform: uppercase;
     color: rgb(96, 95, 97);
     margin-top: -60px; 
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        margin-top: 0;
+    }
 }
 
 footer {
@@ -196,10 +286,19 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 0 10px;
+    }
 }
 
 .footer-section {
     width: 45%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .footer-section h4 {
@@ -209,6 +308,10 @@ footer {
 
 .info {
     margin-left: 100px;
+
+    @media (max-width: 768px) {
+        margin-left: 50px;
+    }
 }
 
 .footer-section p, .footer-section ul {
@@ -228,22 +331,4 @@ footer {
 .footer-bottom {
     text-align: center;
     padding: 10px 0;
-}
-
-@media (max-width: 768px) {
-    .title, .title5 {
-        font-size: 30px; 
-    }
-
-    .sau{
-        height: auto;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .principales_elementos {
-        padding: 10px 0;
-    }
 }
