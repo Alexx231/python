@@ -2,6 +2,8 @@ from clientes import *
 from articulos import *
 from compras import *
 
+# La función menu imprime un menú de opciones para el usuario y solicita una opción. 
+# Devuelve la opción seleccionada como un entero.
 def menu():
     print(f"\nBIENVENIDO AL PROGRAMA")
     print(f"1. Registro de Cliente")
@@ -18,6 +20,8 @@ def menu():
     opcion = input(f"\nQue desea hacer:")
     return (int(opcion))
 
+# Este bucle infinito mantiene el programa en ejecución hasta que el usuario decida salir.
+# Llama a la función menu para obtener la opción del usuario y luego ejecuta la función correspondiente a esa opción.
 while True:
     
     opcion = menu()

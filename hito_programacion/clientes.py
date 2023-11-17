@@ -1,11 +1,13 @@
 clientes = []
 
+# La función registro_cliente solicita al usuario el nombre, apellido, teléfono y DNI de un cliente, 
+# y luego intenta agregar esta información a un archivo llamado "clientes.txt".
 def registro_cliente():
-    nombre = input(f"\nDime el nombre del cliente: ")
-    apellido = input(f"\nDime el apellido del cliente: ")
-    telefono = input(f"\nDime el telefono del cliente: ")
-    dni = input(f"\nDime el numero de identificacion del cliente: ")
     try:
+        nombre = input(f"\nDime el nombre del cliente: ")
+        apellido = input(f"\nDime el apellido del cliente: ")
+        telefono = input(f"\nDime el telefono del cliente: ")
+        dni = input(f"\nDime el numero de identificacion del cliente: ")
         with open("clientes.txt","a") as archivo:
             archivo.write("\n" + nombre + "," + apellido + "," + telefono + "," + dni)
             print(f"\nEl cliente {nombre} fue registrado correctamente")
@@ -13,6 +15,7 @@ def registro_cliente():
         print(f"\nEl proceso de registro fue erroneo")
     return
 
+# La función ver_cliente intenta abrir el archivo "clientes.txt" y muestra todos los clientes registrados.
 def ver_cliente():
     try:
         with open("clientes.txt","r") as archivo:
@@ -24,6 +27,7 @@ def ver_cliente():
         print(f"\nNo hay clientes registrados")
     return
 
+# La función buscar_clientes solicita al usuario el nombre de un cliente para buscarlo en el archivo "clientes.txt".
 def buscar_clientes():
     cliente_a_buscar = input(f"\nQue cliente desea buscar: ")
     encontrado = False
@@ -41,6 +45,7 @@ def buscar_clientes():
         print(f"\nError")
     return
 
+# La función eliminar_clientes solicita al usuario el nombre de un cliente para eliminarlo del archivo "clientes.txt".
 def eliminar_clientes():
     cliente_a_eliminar = input(f"\nQue cliente desea eliminar? :")
     clienteseliminados = []
@@ -61,7 +66,3 @@ def eliminar_clientes():
     except FileNotFoundError:
         print(f"\nNo se ha podido eliminar el cliente") 
     return                    
-    
-        
-        
-    

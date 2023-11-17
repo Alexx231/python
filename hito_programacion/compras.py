@@ -3,9 +3,14 @@ from articulos import *
 
 compras = []
 
+# La función seguimiento_compra imprime un mensaje de agradecimiento por la compra.
 def seguimiento_compra():
     print(f"\n¡Gracias por tu compra! Tu pedido ha sido procesado.")
-    
+    return
+
+# La función realizar_compra muestra todos los artículos disponibles, solicita al usuario el nombre del cliente que realiza la compra, 
+# el producto que desea comprar y la cantidad de unidades. Luego, intenta abrir el archivo "articulos.txt" para verificar la disponibilidad del producto.
+# Si el producto está disponible, se registra la compra en el archivo "compras.txt" y se llama a la función seguimiento_compra.
 def realizar_compra():
     ver_articulos()
     nombre_cliente = input(f"Dime el nombre del cliente que esta realizando la compra:")
