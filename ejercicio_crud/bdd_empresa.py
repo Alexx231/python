@@ -1,6 +1,6 @@
 import mysql.connector
 
-def conexion_bdd():
+def conexion_empresa():
     try:
         return mysql.connector.connect(
             host="localhost",
@@ -11,4 +11,9 @@ def conexion_bdd():
     except mysql.connector.Error as e:
         print(f"\nLa conexion no pudo ser realizada",e) 
 
-conexion_bdd()
+def cerrar_conexion(conexion_empresa):
+    try:
+        conexion_empresa.close()
+    except mysql.connector.Error as error:
+        print("La conexion no fue realizada")
+        return None
