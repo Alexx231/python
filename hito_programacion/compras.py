@@ -22,12 +22,12 @@ def realizar_compra():
             lineas = archivo.readlines()
             for linea in lineas:
                 producto = linea.strip().split(",")
-                if producto_a_comprar in producto[1]:
+                if producto_a_comprar in producto:
                     productoscomprados.append(producto)
-                with open("compras.txt","a") as archivo:
-                        archivo.write(f"\nEl cliente {nombre_cliente} ha comprado {unidades} unidades de {producto[1]}")
-                seguimiento_compra()
-                break
+                    with open("compras.txt","a") as archivo:
+                        archivo.write(f"\nEl cliente {nombre_cliente} ha comprado {unidades} unidades de {producto[0]}")
+                    seguimiento_compra()
+                    break
     except FileNotFoundError:
         print(f"No se pudo realizar la compra")
     return
