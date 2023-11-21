@@ -1,6 +1,6 @@
 from bdd_empresa import *
 
-def crear_departamentos(departamentos_a_guardar):
+def crear_departamentos(departamentos_a_guardar): #Esta función intenta crear un nuevo departamento en la base de datos.
     try:
         conexion = conexion_empresa()
         cursor = conexion.cursor()
@@ -14,7 +14,7 @@ def crear_departamentos(departamentos_a_guardar):
         print("El proceso de añadir el departamento fue cancelado",error)
         return None
     
-def ver_departamentos():
+def ver_departamentos(): #Esta función intenta ver los departamentos de la base de datos.
     try:
         conexion = conexion_empresa()
         cursor = conexion.cursor()
@@ -28,7 +28,7 @@ def ver_departamentos():
         print("No se pudo ver los departamentos",error)
         return None
 
-def actualizar_departamentos(id_departamento,nombre_departamento,ubicacion_departamento):
+def actualizar_departamentos(id_departamento,nombre_departamento,ubicacion_departamento): #Esta función intenta actualizar los departamentos de la base de datos.
     try:
         conexion = conexion_empresa()
         cursor = conexion.cursor()
@@ -42,7 +42,7 @@ def actualizar_departamentos(id_departamento,nombre_departamento,ubicacion_depar
         print("El proceso de actualizar el departammento fue cancelado",error)
         return None
 
-def borrar_departamentos(id_departamentos):
+def borrar_departamentos(id_departamentos): #Esta función intenta borrar los departamentos de la base de datos.
     try:
         conexion = conexion_empresa()
         cursor = conexion.cursor()

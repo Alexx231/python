@@ -1,6 +1,6 @@
 from bdd_empresa import *
 
-def crear_empleados(empleados_a_guardar):
+def crear_empleados(empleados_a_guardar): #Esta función intenta crear un nuevo empleado en la base de datos.
     try:
         conexion = conexion_empresa()
         cursor = conexion.cursor()
@@ -14,7 +14,7 @@ def crear_empleados(empleados_a_guardar):
         print("El proceso de añadir un empleado fue cancelado",error)
         return None
     
-def ver_empleados():
+def ver_empleados(): #Esta función intenta ver los empleados de la base de datos.
     try:
         conexion = conexion_empresa()
         cursor = conexion.cursor()
@@ -28,7 +28,7 @@ def ver_empleados():
         print("No se pudo ver los empleados",error)
         return None
 
-def actualizar_empleados(id_empleado,nombre_empleado):
+def actualizar_empleados(id_empleado,nombre_empleado): #Esta función intenta actualizar los empleados de la base de datos.
     try:
         conexion = conexion_empresa()
         cursor = conexion.cursor()
@@ -42,7 +42,7 @@ def actualizar_empleados(id_empleado,nombre_empleado):
         print("El proceso de actualizar un empleado fue cancelado",error)
         return None
 
-def borrar_empleados(id_empleado):
+def borrar_empleados(id_empleado): #Esta función intenta borrar los empleados de la base de datos.
     try:
         conexion = conexion_empresa()
         cursor = conexion.cursor()
