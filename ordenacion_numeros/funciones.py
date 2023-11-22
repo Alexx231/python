@@ -16,9 +16,14 @@ Todas las funciones estarán en un módulo llamado funciones.py
 import random
 
 def numeros_aleatorios():
-    numerosaleatorios = [random.randint(1,50), 20]
-    print(numerosaleatorios)
-    return numeros_aleatorios
-
+    try:
+        numerosaleatorios = random.randint(range(1, 51), 20)
+        with open("lista_desordenada.txt", "a") as archivo:
+            archivo.write(numerosaleatorios)
+            print(numerosaleatorios)
+    except ValueError:
+        print("No hay suficientes números para la muestra")
+    return numerosaleatorios
+    
     
     
