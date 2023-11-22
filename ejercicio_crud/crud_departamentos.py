@@ -1,4 +1,5 @@
 from bdd_empresa import *
+from mysqlx import Error
 
 def crear_departamentos(departamentos_a_guardar): #Esta función intenta crear un nuevo departamento en la base de datos.
     try:

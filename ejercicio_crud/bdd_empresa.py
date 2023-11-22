@@ -5,11 +5,11 @@ def conexion_empresa():
         return mysql.connector.connect(
             host="localhost",
             user="root",
-            password="curso",
-            database=""
+            password="",
+            database="empresa"
             )
     except mysql.connector.Error as e:
-        print(f"\nLa conexion no pudo ser realizada",e) 
+        print(f"\nLa conexion no pudo ser realizada",e)
 
 def cerrar_conexion(conexion_empresa):
     try:
