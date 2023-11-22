@@ -17,13 +17,13 @@ import random
 
 def numeros_aleatorios():
     try:
-        numerosaleatorios = random.randint(range(1, 51), 20)
-        with open("lista_desordenada.txt", "a") as archivo:
-            archivo.write(numerosaleatorios)
-            print(numerosaleatorios)
+        numeros = []
+        while len(numeros) < 20:
+            numero = random.randint(1, 50)
+            if numero not in numeros:
+                numeros.append(numero)
+        print(numeros)
     except ValueError:
         print("No hay suficientes números para la muestra")
-    return numerosaleatorios
-    
-    
+numeros_aleatorios()
     
