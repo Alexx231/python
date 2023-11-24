@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-24T09:26:58.882Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="4tjp3VHHwafAAnoyu2kq" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-24T09:43:41.607Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="c4iTiZ4X69hySTj07Rwm" version="22.1.3" type="github">
   <diagram name="Página-1" id="SN1qlLheyPG5Ix7OW4UN">
-    <mxGraphModel dx="1238" dy="3016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
+    <mxGraphModel dx="1504" dy="3016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -112,7 +112,7 @@
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-38" value="" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="494.44" y="-640" as="sourcePoint" />
+            <mxPoint x="494" y="-520" as="sourcePoint" />
             <mxPoint x="494.44" y="-700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -124,13 +124,13 @@
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-40" value="" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="719.44" y="-640" as="sourcePoint" />
+            <mxPoint x="719" y="-520" as="sourcePoint" />
             <mxPoint x="719.44" y="-700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-41" value="" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="889.44" y="-640" as="sourcePoint" />
+            <mxPoint x="889" y="-520" as="sourcePoint" />
             <mxPoint x="889.44" y="-700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -142,7 +142,7 @@
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-43" value="" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1109.44" y="-640" as="sourcePoint" />
+            <mxPoint x="1110" y="-520" as="sourcePoint" />
             <mxPoint x="1109.44" y="-700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -154,42 +154,42 @@
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-46" value="" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="274.44000000000005" y="-640" as="sourcePoint" />
+            <mxPoint x="274" y="-520" as="sourcePoint" />
             <mxPoint x="274.44000000000005" y="-700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-47" value="" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="378.89000000000004" y="-640" as="sourcePoint" />
-            <mxPoint x="378.89000000000004" y="-700" as="targetPoint" />
+            <mxPoint x="384.44000000000005" y="-640" as="sourcePoint" />
+            <mxPoint x="384.44000000000005" y="-700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-48" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="112.5" y="-640" width="105" height="70" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-48" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;ASISTENCIA FINANCIERA PARA TRABAJADORES DESEMPLEADOS CON CIERTO HISTORIAL DE COTIZACIÓN&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="107.5" y="-640" width="115" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-50" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="222.5" y="-640" width="105" height="70" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-58" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;BENEFICIO ECONÓMICO PARA TRABAJADORES QUE CUMPLEN LA EDAD DE JUBILACIÓN Y HAN COTIZADO LO NECESARIO&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="217.5" y="-520" width="115" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-51" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="332.5" y="-640" width="105" height="70" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-59" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;AYUDA FINANCIERA PARA TRABAJADORES INCAPACITADOS PERMANENTEMENTE DEBIDO A ENFERMEDAD O LESIÓN&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="327.5" y="-640" width="115" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-52" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="442.5" y="-640" width="105" height="70" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-60" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;BENEFICIO ECONÓMICO PARA TRABAJADORES QUE TOMAN TIEMPO LIBRE PARA CUIDAR A UN NUEVO HIJO&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="547.5" y="-640" width="115" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-53" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="552.5" y="-640" width="105" height="70" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-61" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;ASISTENCIA ECONÓMICA A FAMILIARES DE UN TRABAJADOR FALLECIDO INCLUYENDO PENSIÓN DE VIUDEDAD Y PENSIONES DE ORFANDAD&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="437.5" y="-520" width="115" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-54" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="662.5" y="-640" width="105" height="70" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-62" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;APOYO FINANCIERO PARA TRABAJADORES TEMPORALMENTE INCAPACITADOS POR ENFERMEDAD O LESIÓN&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="662.5" y="-520" width="115" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-55" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="837.5" y="-640" width="105" height="70" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-63" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;SE OTORGAN A PERSONAS EN SITUACIÓN DE INVALIDEZ SIN COTIZAR LO SUFICIENTE PARA UNA PENSIÓN CONTRIBUTIVA&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="940" y="-640" width="115" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-56" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="947.5" y="-640" width="105" height="70" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-64" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 9px;&quot;&gt;&lt;b&gt;SE CONCEDEN A PERSONAS QUE HAN ALCANZADO LA EDAD DE JUBILACIÓN SIN COTIZAR LO SUFICIENTE PARA UNA PENSIÓN CONTRIBUTIVA&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="830" y="-520" width="115" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-57" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="1057.5" y="-640" width="105" height="70" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-65" value="&lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;CON DISCAPACIDAD MAYOR O IGUAL DEL 33% O MAYOR DE DUCHA EDAD CON DISCAPACIDAD MAYOR O IGUAL AL 65%&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="-520" width="115" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
