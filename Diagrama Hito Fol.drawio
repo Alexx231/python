@@ -1,16 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2023-11-24T09:43:41.607Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="c4iTiZ4X69hySTj07Rwm" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-24T09:46:27.838Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="4w40CRNZ542ucYgBRqGZ" version="22.1.3" type="github">
   <diagram name="Página-1" id="SN1qlLheyPG5Ix7OW4UN">
     <mxGraphModel dx="1504" dy="3016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-1" value="&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Times New Roman&quot;&gt;PRESTACIONES&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-1" value="&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;PRESTACIONES&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="635" y="-1260" width="170" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-2" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Times New Roman&quot;&gt;CONTRIBUTIVAS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-2" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;CONTRIBUTIVAS&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="380" y="-940" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-4" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;PENSIONES DE JUBILACIÓN&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-4" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;PENSIONES DE JUBILACIÓN&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="225" y="-760" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-16" value="" style="endArrow=none;html=1;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1" source="_u3MmZW3iTmMYpNk2TSg-2">
@@ -29,7 +29,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-19" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 14px;&quot;&gt;NO CONTRIBUTIVAS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-19" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;NO CONTRIBUTIVAS&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="940" y="-940" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-20" value="" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1">
@@ -68,19 +68,19 @@
             <mxPoint x="440" y="-860" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-26" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;PRESTACIONES POR INCAPACIDAD PERMANENTE&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-26" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;PRESTACIONES POR INCAPACIDAD PERMANENTE&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="335" y="-760" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-27" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;PRESTACIONES POR DESEMPLEO&lt;/font&gt;&lt;span id=&quot;docs-internal-guid-49e1480e-7fff-4781-98b6-2acfe4be3718&quot;&gt;&lt;/span&gt;&lt;span id=&quot;docs-internal-guid-9d8ec7dc-7fff-ddeb-47c2-e3805ae331d7&quot;&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-27" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;PRESTACIONES POR DESEMPLEO&lt;/b&gt;&lt;/font&gt;&lt;span id=&quot;docs-internal-guid-49e1480e-7fff-4781-98b6-2acfe4be3718&quot;&gt;&lt;/span&gt;&lt;span id=&quot;docs-internal-guid-9d8ec7dc-7fff-ddeb-47c2-e3805ae331d7&quot;&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="115" y="-760" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-28" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;PRESTACIONES POR MATERNIDAD Y PATERNIDAD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-28" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;PRESTACIONES POR MATERNIDAD Y PATERNIDAD&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="555" y="-760" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-29" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;PRESTACIONES POR ENFERMEDAD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-29" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;PRESTACIONES POR ENFERMEDAD&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="665" y="-760" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-30" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;PRESTACIONES POR MUERTE Y SUPERVIVENCIA&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-30" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;PRESTACIONES POR MUERTE Y SUPERVIVENCIA&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="445" y="-760" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-31" value="" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1">
@@ -101,13 +101,13 @@
             <mxPoint x="1090" y="-760" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-35" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;PENSIONES DE INVALIDEZ NO CONTRIBUTIVAS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-35" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;PENSIONES DE INVALIDEZ NO CONTRIBUTIVAS&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="950" y="-760" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-36" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;ASIGNACIÓN ECONÓMICA POR CADA MENOR DE 18 AÑOS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-36" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;ASIGNACIÓN ECONÓMICA POR CADA MENOR DE 18 AÑOS&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="1060" y="-760" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-37" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;PENSIONES DE JUBILACION NO CONTRIBUTIVAS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-37" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;PENSIONES DE JUBILACION NO CONTRIBUTIVAS&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
           <mxGeometry x="840" y="-760" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-38" value="" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=none;strokeColor=#182E3E;fontColor=default;" edge="1" parent="1">
@@ -165,31 +165,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-48" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;ASISTENCIA FINANCIERA PARA TRABAJADORES DESEMPLEADOS CON CIERTO HISTORIAL DE COTIZACIÓN&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="107.5" y="-640" width="115" height="120" as="geometry" />
+          <mxGeometry x="98.75" y="-640" width="132.5" height="130" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-58" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;BENEFICIO ECONÓMICO PARA TRABAJADORES QUE CUMPLEN LA EDAD DE JUBILACIÓN Y HAN COTIZADO LO NECESARIO&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="217.5" y="-520" width="115" height="120" as="geometry" />
+          <mxGeometry x="208.75" y="-520" width="132.5" height="130" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-59" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;AYUDA FINANCIERA PARA TRABAJADORES INCAPACITADOS PERMANENTEMENTE DEBIDO A ENFERMEDAD O LESIÓN&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="327.5" y="-640" width="115" height="120" as="geometry" />
+          <mxGeometry x="318.75" y="-640" width="132.5" height="130" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-60" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;BENEFICIO ECONÓMICO PARA TRABAJADORES QUE TOMAN TIEMPO LIBRE PARA CUIDAR A UN NUEVO HIJO&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="547.5" y="-640" width="115" height="120" as="geometry" />
+          <mxGeometry x="538.75" y="-640" width="132.5" height="130" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-61" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;ASISTENCIA ECONÓMICA A FAMILIARES DE UN TRABAJADOR FALLECIDO INCLUYENDO PENSIÓN DE VIUDEDAD Y PENSIONES DE ORFANDAD&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="437.5" y="-520" width="115" height="120" as="geometry" />
+          <mxGeometry x="428.75" y="-525" width="132.5" height="130" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-62" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;APOYO FINANCIERO PARA TRABAJADORES TEMPORALMENTE INCAPACITADOS POR ENFERMEDAD O LESIÓN&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="662.5" y="-520" width="115" height="120" as="geometry" />
+          <mxGeometry x="651.25" y="-520" width="137.5" height="130" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-63" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;SE OTORGAN A PERSONAS EN SITUACIÓN DE INVALIDEZ SIN COTIZAR LO SUFICIENTE PARA UNA PENSIÓN CONTRIBUTIVA&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="940" y="-640" width="115" height="120" as="geometry" />
+          <mxGeometry x="935" y="-640" width="130" height="130" as="geometry" />
         </mxCell>
         <mxCell id="_u3MmZW3iTmMYpNk2TSg-64" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 9px;&quot;&gt;&lt;b&gt;SE CONCEDEN A PERSONAS QUE HAN ALCANZADO LA EDAD DE JUBILACIÓN SIN COTIZAR LO SUFICIENTE PARA UNA PENSIÓN CONTRIBUTIVA&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="830" y="-520" width="115" height="120" as="geometry" />
+          <mxGeometry x="825" y="-520" width="130" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="_u3MmZW3iTmMYpNk2TSg-65" value="&lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;&gt;&lt;b&gt;CON DISCAPACIDAD MAYOR O IGUAL DEL 33% O MAYOR DE DUCHA EDAD CON DISCAPACIDAD MAYOR O IGUAL AL 65%&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="1055" y="-520" width="115" height="120" as="geometry" />
+        <mxCell id="_u3MmZW3iTmMYpNk2TSg-65" value="&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;CON DISCAPACIDAD MAYOR O IGUAL DEL 33% O MAYOR DE DUCHA EDAD CON DISCAPACIDAD MAYOR O IGUAL AL 65%&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="1042.5" y="-520" width="135" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
