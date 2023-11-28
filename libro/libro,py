@@ -1,0 +1,14 @@
+class libro:
+
+def __init__(self, titulo, autor, editorial, genero,año_publicacion, paginas, idioma, prestado, edicion, prestamos_realizados, isbn):
+    self.titulo = titulo
+    self.autor = autor
+    self.editorial = editorial
+    self.genero = genero
+    self.año_publicacion = año_publicacion
+    self.paginas = paginas
+    self.idioma = idioma
+    self.prestado = prestado
+    self.edicion = edicion
+    self.prestamos_realizados = prestamos_realizados
+    self.isbn = isbn
