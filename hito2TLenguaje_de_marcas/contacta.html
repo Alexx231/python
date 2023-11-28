@@ -1,0 +1,64 @@
+
+<!--Nombre/Empresa (Al menos 3 caracteres, y que no sea únicamente valores numéricos)
+● Sector/Profesión (Al menos 3 caracteres, solo letras)
+● País (Únicamente: España, Portugal, Francia, Inglaterra, Alemania)
+● Correo electrónico (Que sea un correo electrónico valido)
+● Teléfono (Solo dígitos, no más de 12 dígitos y no menos de 8 dígitos)
+● Mensaje (Mínimo 5 palabras)-->
+
+<!-- Contacta.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Presentacion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacta.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form id="contactForm">
+        <label for="nombre">Nombre/Empresa:</label><br>
+        <input type="text" id="nombre" pattern="[A-Za-z]{3,}" required><br>
+
+        <label for="sector">Sector/Profesión:</label><br>
+        <input type="text" id="sector" pattern="[A-Za-z]{3,}" required><br>
+
+        <label for="pais">País:</label><br>
+        <select id="pais" required>
+            <option value="España">España</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Francia">Francia</option>
+            <option value="Inglaterra">Inglaterra</option>
+            <option value="Alemania">Alemania</option>
+        </select><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" required><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" pattern="[0-9]{8,12}" required><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" minlength="5" required></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="validacion.js"></script>
+</body>
+</html>

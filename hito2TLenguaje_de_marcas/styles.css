@@ -1,0 +1,180 @@
+/* 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s; /* Agrega una transición suave al cambiar el color de fondo */
+
+
+/* nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+ */
+
+/* nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.5s; /* Agrega una transición suave al cambiar el color del texto */
+ */
+/* 
+nav a:hover {
+    color: #ddd; /* Cambia el color del texto al pasar el mouse */
+
+ */
+/* video {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+ */
+
+/* 
+#cv 
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: background-color 0.5s; /* Agrega una transición suave al cambiar el color de fondo */
+ */
+/* 
+#cv:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el mouse */
+ */
+
+/* Estilos para la página de contacto */
+/* #contactForm {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: background-color 0.5s; /* Agrega una transición suave al cambiar el color de fondo */
+ */
+/* 
+#contactForm:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el mouse */
+ */
+
+
+
+/* TODO ECHO CON BOOTSTRAP EN CLASE */
+section{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+/* PRIMER APARTADO CV */
+.hero {
+    background-color: #f6f7f8;
+    min-height:450px;
+    text-align:center;
+}
+
+.hero-principal {
+    padding: 3rem;
+} 
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #666
+}
+
+.hero-imagen {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+/* BREVE DESCRIPCION SOBRE MI */
+.sobre-mi {
+    height: 400px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Rubik Dirty Headline", cursive;
+}
+
+.seccion-oscura {
+    background-color: #333;
+    color: white;
+    padding: 3rem;
+}
+
+/* EXPERIENCIA */
+
+.experiencia {
+    padding: 40px;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border : 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.seccion-clara {
+    background-color: white;
+    color: black;
+}
+
+.experiencia .row div {
+    height: 250px;
+    background-color: aqua;
+    border: 3px solid white;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: red;
+    background-color: black;
+    padding: 8px 19px;
+    border-radius: 50%
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
