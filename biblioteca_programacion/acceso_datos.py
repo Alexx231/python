@@ -1,7 +1,7 @@
 """ añadir y borrar """
 
 
-from conexion import Conectar
+from biblioteca_programacion.conexion import Conectar
 
 def anadirlibro(libros_a_guardar):
     try:
