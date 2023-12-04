@@ -1,7 +1,6 @@
 """ añadir y borrar """
 
-
-from biblioteca_programacion.conexion import Conectar
+from conexion import Conectar
 
 def anadirlibro(libros_a_guardar):
     try:
@@ -16,4 +15,15 @@ def anadirlibro(libros_a_guardar):
     except mysql.connector.Error as error:
         print("El proceso de añadir al cliente fue cancelado",error)
 
-anadirlibro()
+def borrarlibro(libros_a_borrar):
+    try:
+        conexionbdd = Conectar()
+        cursor = conexionbdd.cursor()
+        query = "DELETE FROM libros WHERE id_libro = %s"
+        valor = libros_a_borrar
+        cursor.execute(query,valor)
+        conexionbdd.commit()
+        print("El proceso de borrar el libro fue hecho correctamente")
+        conexionbdd.close()
+    except mysql.connector.Error as error:
+        print("El proceso de borrar el libro fue cancelado",error)
