@@ -22,11 +22,11 @@ class Libro:
         query = ("SELECT * FROM libros")
         cursor.execute(query)
         for(id_libro,titulo,autor,edicion,editorial) in cursor:
-            print("ID:{id_libro} - Titulo:{titulo} - Autor:{autor}")
-        conexion.commit()
-        conexion.close()
+            print("ID:{id_libro} - Titulo:{titulo} - Autor:{autor} - Edicion:{edicion} - Editorial:{editorial}")
+        self.conectar.conexion.commit()
+        self.conectar.conexion.close()
         cursor.close()
-        return libros
+        return
 
     def buscar_libro(self, titulo):
         cursor = self.db.conexion.cursor()
