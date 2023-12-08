@@ -1,16 +1,23 @@
 import mysql.connector
-
 class Conectar:
-    
+    def __init__(self):
+        self.conexion = None
+
     def conexion_biblioteca(self):
-        try:
-            conexionbdd= mysql.connector.connect(
-                host="localhost",
-                user="root",
-                password="",
-                database="biblioteca"
+        try:    
+            self.conexion = mysql.connector.connect(
+                host='localhost',
+                user='root',
+                password='',
+                database='biblioteca'
             )
-            print(f"La conexion fue exitosa")
+            print("Conexión exitosa.")
+
         except mysql.connector.Error as e:
-            print(f"\nLa conexion no pudo ser realizada",e)
-            
+            print("Error al conectar a la base de datos: ", e)
+
+    def close_connection(self):
+        if self.conexion:
+            self.conexion.close()
+            print("Conexión cerrada.")
+    
