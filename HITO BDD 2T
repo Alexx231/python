@@ -1,3 +1,4 @@
+DROP DATABASE CINE;
 CREATE DATABASE CINE;
 USE CINE;
 
@@ -79,3 +80,8 @@ VALUES (1, 1, 5),
        (2, 2, 10),
        (3, 3, 15),
        (4, 4, 20);
+       
+-- En MySQL Workbench, puedes hacer esto seleccionando "Data Export" en la sección "Management" del panel de navegación. Selecciona la base de datos 'CINE', elige la opción "Export to Self-Contained File" y haz clic en "Start Export".
+
+CREATE USER 'Alex'@'localhost' IDENTIFIED BY 'curso';
+GRANT ALL PRIVILEGES ON CINE.* TO 'Alex'@'localhost';
