@@ -1,0 +1,42 @@
+CREATE TABLE Cliente (
+    ID_Cliente INT PRIMARY KEY,
+    Nombre VARCHAR(255),
+    Cuenta_Bancaria VARCHAR(255)
+);
+
+CREATE TABLE Producto (
+    ID_Producto INT PRIMARY KEY,
+    Nombre VARCHAR(255),
+    Disponibilidad INT
+);
+
+CREATE TABLE Factura (
+    ID_Factura INT PRIMARY KEY,
+    Monto_Total DECIMAL(10, 2),
+    Fecha_Pago DATE
+);
+
+CREATE TABLE Pedido (
+    ID_Pedido INT PRIMARY KEY,
+    Fecha_Pedido DATE,
+    Fecha_Devolucion DATE,
+    Estado VARCHAR(255),
+    ID_Cliente INT,
+    ID_Factura INT,
+    FOREIGN KEY (ID_Cliente) REFERENCES Cliente(ID_Cliente),
+    FOREIGN KEY (ID_Factura) REFERENCES Factura(ID_Factura)
+);
+
+CREATE TABLE Transportista (
+    ID_Transportista INT PRIMARY KEY,
+    Nombre VARCHAR(255)
+);
+
+CREATE TABLE Detalle_Pedido (
+    ID_Pedido INT,
+    ID_Producto INT,
+    Cantidad INT,
+    PRIMARY KEY (ID_Pedido, ID_Producto),
+    FOREIGN KEY (ID_Pedido) REFERENCES Pedido(ID_Pedido),
+    FOREIGN KEY (ID_Producto) REFERENCES Producto(ID_Producto)
+);
