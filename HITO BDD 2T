@@ -85,3 +85,7 @@ VALUES (1, 1, 5),
 
 CREATE USER 'Alex'@'localhost' IDENTIFIED BY 'curso';
 GRANT ALL PRIVILEGES ON CINE.* TO 'Alex'@'localhost';
+
+
+CREATE USER 'Mama'@'localhost' IDENTIFIED BY 'curso';
+GRANT ALL PRIVILEGES ON CINE.* TO 'Mama'@'localhost';
