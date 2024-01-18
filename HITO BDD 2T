@@ -1,3 +1,6 @@
+CREATE DATABASE CINE;
+USE CINE;
+
 CREATE TABLE Cliente (
     ID_Cliente INT PRIMARY KEY,
     Nombre VARCHAR(255),
@@ -40,3 +43,39 @@ CREATE TABLE Detalle_Pedido (
     FOREIGN KEY (ID_Pedido) REFERENCES Pedido(ID_Pedido),
     FOREIGN KEY (ID_Producto) REFERENCES Producto(ID_Producto)
 );
+
+INSERT INTO Cliente (ID_Cliente, Nombre, Cuenta_Bancaria)
+VALUES (1, 'Cliente 1', '123456'),
+       (2, 'Cliente 2', '234567'),
+       (3, 'Cliente 3', '345678'),
+       (4, 'Cliente 4', '456789');
+
+INSERT INTO Producto (ID_Producto, Nombre, Disponibilidad)
+VALUES (1, 'Producto 1', 10),
+       (2, 'Producto 2', 20),
+       (3, 'Producto 3', 30),
+       (4, 'Producto 4', 40);
+
+INSERT INTO Factura (ID_Factura, Monto_Total, Fecha_Pago)
+VALUES (1, 100.00, '2022-01-01'),
+       (2, 200.00, '2022-02-01'),
+       (3, 300.00, '2022-03-01'),
+       (4, 400.00, '2022-04-01');
+
+INSERT INTO Pedido (ID_Pedido, Fecha_Pedido, Fecha_Devolucion, Estado, ID_Cliente, ID_Factura)
+VALUES (1, '2022-01-01', '2022-01-10', 'Entregado', 1, 1),
+       (2, '2022-02-01', '2022-02-10', 'Entregado', 2, 2),
+       (3, '2022-03-01', '2022-03-10', 'Pendiente', 3, 3),
+       (4, '2022-04-01', '2022-04-10', 'Pendiente', 4, 4);
+
+INSERT INTO Transportista (ID_Transportista, Nombre)
+VALUES (1, 'Transportista 1'),
+       (2, 'Transportista 2'),
+       (3, 'Transportista 3'),
+       (4, 'Transportista 4');
+
+INSERT INTO Detalle_Pedido (ID_Pedido, ID_Producto, Cantidad)
+VALUES (1, 1, 5),
+       (2, 2, 10),
+       (3, 3, 15),
+       (4, 4, 20);
